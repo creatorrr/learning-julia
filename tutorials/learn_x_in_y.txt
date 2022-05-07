@@ -1,0 +1,2854 @@
+               _
+   _       _ _(_)_     |  Documentation: https://docs.julialang.org
+  (_)     | (_) (_)    |
+   _ _   _| |_  __ _   |  Type "?" for help, "]?" for Pkg help.
+  | | | | | | |/ _` |  |
+  | | |_| | | | (_| |  |  Version 1.7.2 (2022-02-06)
+ _/ |\__'_|_|_|\__'_|  |  Official https://julialang.org/ release
+|__/                   |
+
+julia> # Trying out commands from the learnXinY page for julia
+julia> # Trying out commands from the learnXinY page for julia
+
+julia> # https://learnxinyminutes.com/docs/julia/julia> # https://learnxinyminutes.com/docs/julia/
+
+julia> typeof(4)
+julia> typeof(4)
+Int64
+
+julia> typeof(9 + 1im)
+julia> typeof(9 + 1im)
+Complex{Int64}
+
+julia> typeof(9 // 1im)
+julia> typeof(9 // 1im)
+Complex{Rational{Int64}}
+
+julia> # So / is regular floating division; \ is also division!julia> # So / is regular floating division; \ is also division!
+
+julia> # julia> # // is rational numbers; for truncated int division use div(x, y)
+julia> # // is rational numbers; for truncated int division use div(x, y)
+
+julia> 1 /2
+julia> 1 / 2
+julia> 1 / 2
+0.5
+
+julia> 1 \2 julia> 1 \2
+julia> 1 \ 3
+julia> 1 \ 2
+julia> 1 \ 2
+2.0
+
+julia> 1 \\ 2
+julia> 1 \\ julia> 1 \\julia> 1 \julia> 1 // 2
+julia> 1 // 2
+1//2
+
+julia> 1 \\ 2
+julia> 1 \\ 2
+ERROR: syntax: "\" is not a unary operator
+Stacktrace:
+ [1] top-level scope
+   @ none:1
+
+julia> # % is the goofd julia> # % is the goofd
+julia> # % is the goof
+julia> # % is the good old modula
+julia> # % is the good old modulo operate
+julia> # % is the good old modulo operator
+julia> # % is the good old modulo operator
+
+julia> 1 julia> 12 % 10
+julia> 12 % 10
+2
+
+julia> @ julia> @julia> # julia DOES have inter
+julia> # julia DOES have integer overflow julia> # julia DOES have integer overflow, so user
+julia> # julia DOES have integer overflow, so use big(n) for big stuff
+julia> # julia DOES have integer overflow, so use big(n) for big stuff
+
+julia> 10 ^julia> 10 julia> 10^19
+julia> 10^19
+-8446744073709551616
+
+julia> big*julia> big(10)^19
+julia> big(10)^19
+10000000000000000000
+
+julia> or floa
+julia> or flo
+julia> or fl
+julia> or f
+julia> or julia> or
+julia> o
+julia> # Or float and the e-notation works too
+julia> # Or float and the e-notation works too
+
+julia> 10
+julia> 1^199
+julia> 1^19
+julia> 1^19
+1
+
+julia> 1^19
+julia> 1^19
+julia> 1^19
+julia> 1^19
+julia> 1^19
+julia> 1^19
+julia> 10^19
+julia> 10^19
+-8446744073709551616
+
+julia> 10^19
+julia> 10^19
+julia> 1^19
+julia> 1^19
+julia> 10^19
+julia> 10^19
+julia> 10^19
+julia> 10^19
+julia> 10^19
+julia> 1019
+julia> 119
+julia> 1e19
+julia> 1e19
+1.0e19
+
+julia> 10.0^19
+julia> 10.0^19
+1.0e19
+
+julia> true && false
+julia> true && false
+false
+
+julia> # Comparision
+julia> # Comparisio
+julia> # Comparisi
+julia> # Comparisons a
+julia> # Comparisons chainable like [p
+julia> # Comparisons chainable like [julia> # Comparisons chainable like python
+julia> # Comparisons chainable like python
+
+julia> 1 > 2 julia> 1 > 2
+julia> 1 > julia> 1 >julia> 1 < 2 < 3
+julia> 1 < 2 < 3
+julia> 1 < 2 < 3
+true
+
+julia> @ julia> @julia> # Strings in double quotes; characret
+julia> # Strings in double quotes; characre
+julia> # Strings in double quotes; characr
+julia> # Strings in double quotes; characters in sil
+julia> # Strings in double quotes; characters in single
+julia> # Strings in double quotes; characters in single
+
+julia> typefo
+julia> typef
+julia> typeof julia> typeof("e
+julia> typeof("hello")
+julia> typeof("hello")
+String
+
+julia> typeof("hello")
+julia> typeof("hello")
+julia> typeof("hello")
+julia> typeof("hello")
+julia> typeof("hello)
+julia> typeof("hell)
+julia> typeof("hel)
+julia> typeof("he)
+julia> typeof("h)
+julia> typeof(")
+julia> typeof()
+julia> typeof(')
+julia> typeof('Y)
+julia> typeof('Y')
+julia> typeof('Y')
+Char
+
+julia> # In julia, eve
+julia> # In julia, ev
+julia> # In julia, e
+julia> # In julia, inde
+julia> # In julia, indixes
+julia> # In julia, indixe
+julia> # In julia, indix
+julia> # In julia, indices start from 1; julia> # In julia, indices start from 1;julia> # In julia, indices start from 1;julia> # In julia, indices start from 1. Fuck julia> # In julia, indices start from 1. Fucking hell
+julia> # In julia, indices start from 1. Fucking hell
+
+julia> "aaa"[1]julia> "aaa"[1]
+'a': ASCII/Unicode U+0061 (category Ll: Letter, lowercase)
+
+julia> # Strings can be iun
+julia> # Strings can be iu
+julia> # Strings can be indexec
+julia> # Strings can be indexed BUTTT since all of then
+julia> # Strings can be indexed BUTTT since all of them are unico
+julia> # Strings can be indexed BUTTT since all of them are unic
+julia> # Strings can be indexed BUTTT since all of them are uni
+julia> # Strings can be indexed BUTTT since all of them are un
+julia> # Strings can be indexed BUTTT since all of them are utf8, shit
+julia> # Strings can be indexed BUTTT since all of them are utf8, shi
+julia> # Strings can be indexed BUTTT since all of them are utf8, sh
+julia> # Strings can be indexed BUTTT since all of them are utf8, s
+julia> # Strings can be indexed BUTTT since all of them are utf8, shit characte
+julia> # Strings can be indexed BUTTT since all of them are utf8, shit character
+julia> # Strings can be indexed BUTTT since all of them are utf8, shit characters
+julia> # Strings can be indexed BUTTT since all of them are utf8, shit characters julia> # Strings can be indexed BUTTT since all of them are utf8, shit characters w
+julia> # Strings can be indexed BUTTT since all of them are utf8, shit characters wo
+julia> # Strings can be indexed BUTTT since all of them are utf8, shit characters won
+julia> # Strings can be indexed BUTTT since all of them are utf8, shit characters wont
+julia> # Strings can be indexed BUTTT since all of them are utf8, shit characters wont julia> # Strings can be indexed BUTTT since all of them are utf8, shit characters wont w
+julia> # Strings can be indexed BUTTT since all of them are utf8, shit characters wont wo
+julia> # Strings can be indexed BUTTT since all of them are utf8, shit characters wont wor
+julia> # Strings can be indexed BUTTT since all of them are utf8, shit characters wont work
+julia> # Strings can be indexed BUTTT since all of them are utf8, shit characters wont work
+
+julia> "he
+julia> "h
+julia> "julia> "Ï is dope"[1]julia> "Ï is dope"[1]
+'Ï': Unicode U+03C0 (category Ll: Letter, lowercase)
+
+julia> "Ï is dope"[1]julia> "Ï is dope"[1]julia> "Ï is dope"[1]julia> "Ï is dope"[1]julia> "Ï is dope"[1]julia> "Ï is dope"[1]julia> "Ï is dope")[1]julia> "Ï is dope")[1]julia> "Ï is dope")[1]julia> "Ï is dope")[1]julia> "Ï is dope")[1]julia> "Ï is dope")[1]julia> "Ï is dope")[1]julia> "Ï is dope")[1]julia> "Ï is dope")[1]julia> "Ï is dope")[1]julia> "Ï is dope")[1]julia> "Ï is dope")[1]julia> "Ï is dope")[1]julia> a"Ï is dope")[1]julia> as"Ï is dope")[1]julia> asc"Ï is dope")[1]julia> asci"Ï is dope")[1]julia> ascii"Ï is dope")[1]julia> ascii("Ï is dope")[1]julia> ascii("Ï is dope")[1]
+ERROR: ArgumentError: invalid ASCII at index 1 in "Ï is dope"
+Stacktrace:
+ [1] __throw_invalid_ascii(s::String, i::Int64)
+   @ Base ./strings/util.jl:783
+ [2] ascii(s::String)
+   @ Base ./strings/util.jl:779
+ [3] top-level scope
+   @ REPL[32]:1
+
+julia> ascii("Ï is dope")[1]julia> ascii("Ï is dope")[1]julia> ascii("Ï is dope")[1]julia> ascii("Ï is dope")[1]julia> ascii("Ï is dope")[1]julia> ascii("Ï is dope")[1]julia> ascii("Ï is dope")[1]julia> ascii("Ï is dope")[1]julia> ascii("Ï is dope")[1]julia> ascii("Ï is dope")[1]julia> ascii("Ï is dope")[1]julia> ascii("Ï is dope")[1]julia> ascii("Ï is dope")[1]julia> ascii("Ï is dope")[1]julia> ascii("Ï is dope")[1]julia> ascii("Ï is dope")[1]julia> ascii("Ï is dope")[1]julia> ascii("Ïis dope")[1]julia> ascii("is dope")[1]julia> ascii(is dope")[1]julia> ascii("is dope")[1]julia> ascii("is dope")[1]
+'i': ASCII/Unicode U+0069 (category Ll: Letter, lowercase)
+
+julia> " 1
+julia> " julia> "1 + 2 = julia> "1 + 2 == $(1+2)"  # Interpl
+julia> "1 + 2 == $(1+2)"  # Interpolation
+julia> "1 + 2 == $(1+2)"  # Interpolation
+"1 + 2 == 3"
+
+julia> ptin
+julia> pti
+julia> pt
+julia> println('a')
+julia> println('a')
+a
+
+julia> println('a')
+julia> println('a')
+julia> println('a')
+julia> println('a')
+julia> println('a')
+julia> println('a')
+julia> println('a')
+julia> println('a')
+julia> printl('a')
+julia> print('a')
+julia> print('a')
+a
+julia> using Printg
+julia> using Printf
+julia> using Printf
+
+julia> # printf macro
+julia> # printf macro
+
+julia> @printf "%d bananas" 2
+julia> @printf "%d bananas" 2
+2 bananas
+julia> variable = 2
+julia> variable = 2
+2
+
+julia> r
+julia> try julia> try
+julia> try
+baba
+julia> try
+baba
+catch 2
+julia> try
+baba
+catch e
+julia> try
+baba
+catch e
+println(e)
+julia> try
+baba
+catch e
+println(e)
+end
+julia> try
+baba
+catch e
+println(e)
+end
+UndefVarError(:baba)
+
+julia> # Indentation is not import
+julia> # Indentation is not impor
+julia> # Indentation is not impo
+julia> # Indentation is not imp
+julia> # Indentation is not im
+julia> # Indentation is not i
+julia> # Indentation is not significant
+julia> # Indentation is not significant
+
+julia> # variable nae
+julia> # variable names start with letter( julia> # variable names start with letter(julia> # variable names start with letter (any unici
+julia> # variable names start with letter (any unico0de
+julia> # variable names start with letter (any unico0d
+julia> # variable names start with letter (any unico0
+julia> # variable names start with letter (any unicode) or underscore, everythi
+julia> # variable names start with letter (any unicode) or underscore, everythin
+julia> # variable names start with letter (any unicode) or underscore, everything
+julia> # variable names start with letter (any unicode) or underscore, everything julia> # variable names start with letter (any unicode) or underscore, everything w
+julia> # variable names start with letter (any unicode) or underscore, everything wo
+julia> # variable names start with letter (any unicode) or underscore, everything wor
+julia> # variable names start with letter (any unicode) or underscore, everything work
+julia> # variable names start with letter (any unicode) or underscore, everything works
+julia> # variable names start with letter (any unicode) or underscore, everything works julia> # variable names start with letter (any unicode) or underscore, everything works a
+julia> # variable names start with letter (any unicode) or underscore, everything works af
+julia> # variable names start with letter (any unicode) or underscore, everything works aft
+julia> # variable names start with letter (any unicode) or underscore, everything works afte
+julia> # variable names start with letter (any unicode) or underscore, everything works after
+julia> # variable names start with letter (any unicode) or underscore, everything works after julia> # variable names start with letter (any unicode) or underscore, everything works after t
+julia> # variable names start with letter (any unicode) or underscore, everything works after th
+julia> # variable names start with letter (any unicode) or underscore, everything works after tha
+julia> # variable names start with letter (any unicode) or underscore, everything works after that
+julia> # variable names start with letter (any unicode) or underscore, everything works after that
+
+julia> yo! = 1
+julia> yo! = 1
+1
+
+julia> â = 8
+julia> â = 8
+8
+
+julia> a = Int64[]julia> a = Int64[]
+Int64[]
+
+julia> # 1-D arrays can use , or l;julia> # 1-D arrays can use , or l
+julia> # 1-D arrays can use , or ; for separator. 2-F
+Julia> # 1-D arrays can use , or ; for separator. 2-D use spaces for rows and julia> # 1-D arrays can use , or ; for separator. 2-D use spaces for rows and julia> # 1-D arrays can use , or ; for separator. 2-D use spaces for rows and julia> # 1-D arrays can use , or ; for separator. 2-D use spaces for ows and julia> # 1-D arrays can use , or ; for separator. 2-D use spaces for ws and julia> # 1-D arrays can use , or ; for separator. 2-D use spaces for s and julia> # 1-D arrays can use , or ; for separator. 2-D use spaces for  and julia> # 1-D arrays can use , or ; for separator. 2-D use spaces for c and julia> # 1-D arrays can use , or ; for separator. 2-D use spaces for co and julia> # 1-D arrays can use , or ; for separator. 2-D use spaces for col and julia> # 1-D arrays can use , or ; for separator. 2-D use spaces for colu and julia> # 1-D arrays can use , or ; for separator. 2-D use spaces for colum and julia> # 1-D arrays can use , or ; for separator. 2-D use spaces for column and julia> # 1-D arrays can use , or ; for separator. 2-D use spaces for columns and julia> # 1-D arrays can use , or ; for separator. 2-D use spaces for columns and julia> # 1-D arrays can use , or ; for separator. 2-D use spaces for columns and julia> # 1-D arrays can use , or ; for separator. 2-D use spaces for columns and  julia> # 1-D arrays can use , or ; for separator. 2-D use spaces for columns and  ;julia> # 1-D arrays can use , or ; for separator. 2-D use spaces for columns and  ; julia> # 1-D arrays can use , or ; for separator. 2-D use spaces for columns and  ; f
+julia> # 1-D arrays can use , or ; for separator. 2-D use spaces for columns and  ; fo
+julia> # 1-D arrays can use , or ; for separator. 2-D use spaces for columns and  ; for
+julia> # 1-D arrays can use , or ; for separator. 2-D use spaces for columns and  ; for julia> # 1-D arrays can use , or ; for separator. 2-D use spaces for columns and  ; for r
+julia> # 1-D arrays can use , or ; for separator. 2-D use spaces for columns and  ; for ro
+julia> # 1-D arrays can use , or ; for separator. 2-D use spaces for columns and  ; for row
+julia> # 1-D arrays can use , or ; for separator. 2-D use spaces for columns and  ; for rows
+julia> # 1-D arrays can use , or ; for separator. 2-D use spaces for columns and  ; for rows
+
+julia> matrix = [1 2 ;julia> matrix = [1 2 julia> matrix = [1 2; 3 4 julia> matrix = [1 2; 3 4]\julia> matrix = [1 2; 3 4]julia> matrix = [1 2; 3 4]
+2Ã2 Matrix{Int64}:
+ 1  2
+ 3  4
+
+julia> b = Int64[2, 2, 2]  # Arrays of particular type
+julia> b = Int64[2, 2, 2]  # Arrays of particular type
+3-element Vector{Int64}:
+ 2
+ 2
+ 2
+
+julia> push!(a, 1)
+julia> push!(a, 1)
+1-element Vector{Int64}:
+ 1
+
+julia> push!(a, 1)
+julia> push!(a, 1)
+julia> append
+julia> appen
+julia> appe
+julia> append!(a, b)
+julia> append!(a, b)
+4-element Vector{Int64}:
+ 1
+ 2
+ 2
+ 2
+
+julia> a
+julia> a
+4-element Vector{Int64}:
+ 1
+ 2
+ 2
+ 2
+
+julia> p
+julia> # push! and append! are mutable; adding !~julia> # push! and append! are mutable; adding ! at the end of a var name is a julia> # push! and append! are mutable; adding ! at the end of a var name is a c
+julia> # push! and append! are mutable; adding ! at the end of a var name is a co
+julia> # push! and append! are mutable; adding ! at the end of a var name is a con
+julia> # push! and append! are mutable; adding ! at the end of a var name is a conv
+julia> # push! and append! are mutable; adding ! at the end of a var name is a conve
+julia> # push! and append! are mutable; adding ! at the end of a var name is a conven
+julia> # push! and append! are mutable; adding ! at the end of a var name is a convent
+julia> # push! and append! are mutable; adding ! at the end of a var name is a conventi
+julia> # push! and append! are mutable; adding ! at the end of a var name is a conventio
+julia> # push! and append! are mutable; adding ! at the end of a var name is a convention
+julia> # push! and append! are mutable; adding ! at the end of a var name is a convention julia> # push! and append! are mutable; adding ! at the end of a var name is a convention o
+julia> # push! and append! are mutable; adding ! at the end of a var name is a convention of
+julia> # push! and append! are mutable; adding ! at the end of a var name is a convention of julia> # push! and append! are mutable; adding ! at the end of a var name is a convention of r
+julia> # push! and append! are mutable; adding ! at the end of a var name is a convention of rm
+julia> # push! and append! are mutable; adding ! at the end of a var name is a convention of rmu
+julia> # push! and append! are mutable; adding ! at the end of a var name is a convention of rmut
+julia> # push! and append! are mutable; adding ! at the end of a var name is a convention of rmuta
+julia> # push! and append! are mutable; adding ! at the end of a var name is a convention of rmutat
+julia> # push! and append! are mutable; adding ! at the end of a var name is a convention of rmuta
+julia> # push! and append! are mutable; adding ! at the end of a var name is a convention of rmutab
+julia> # push! and append! are mutable; adding ! at the end of a var name is a convention of rmutabl
+julia> # push! and append! are mutable; adding ! at the end of a var name is a convention of rmutable
+julia> # push! and append! are mutable; adding ! at the end of a var name is a convention of rmutable julia> # push! and append! are mutable; adding ! at the end of a var name is a convention of rmutable f
+julia> # push! and append! are mutable; adding ! at the end of a var name is a convention of rmutable fn
+julia> # push! and append! are mutable; adding ! at the end of a var name is a convention of rmutable fns
+julia> # push! and append! are mutable; adding ! at the end of a var name is a convention of rmutable fns
+
+julia> a[end]julia> a[end]
+2
+
+julia> pop!(a)
+julia> pop!(a)
+2
+
+julia> popfirst!O
+Julia> popfirst!(a)
+julia> popfirst!(a)
+1
+
+julia> pushfirst!(a, 3)
+julia> pushfirst!(a, 3)
+3-element Vector{Int64}:
+ 3
+ 2
+ 2
+
+julia> a
+julia> a
+3-element Vector{Int64}:
+ 3
+ 2
+ 2
+
+julia> sort(a)
+julia> sort(a)
+3-element Vector{Int64}:
+ 2
+ 2
+ 3
+
+julia> sor
+julia> so
+julia> s
+julia> a
+julia> a
+3-element Vector{Int64}:
+ 3
+ 2
+ 2
+
+julia> sort!(a)
+julia> sort!(a)
+3-element Vector{Int64}:
+ 2
+ 2
+ 3
+
+julia> a
+julia> a
+3-element Vector{Int64}:
+ 2
+ 2
+ 3
+
+julia> a julia> a[end + 1]julia> a[end + 1]
+ERROR: BoundsError: attempt to access 3-element Vector{Int64} at index [4]
+Stacktrace:
+ [1] getindex(A::Vector{Int64}, i1::Int64)
+   @ Base ./array.jl:861
+ [2] top-level scope
+   @ REPL[63]:1
+
+julia> a julia> a[end - 1]julia> a[end - 1]
+2
+
+julia> # User
+julia> # Use slice synm
+julia> # Use slice syntax (like python) for ranb
+julia> # Use slice syntax (like python) for ranges
+julia> # Use slice syntax (like python) for ranges
+
+julia> typeod
+julia> typeof(a[1
+julia> typeof(a[2:end])
+julia> typeof(a[2:end])
+Vector{Int64} (alias for Array{Int64, 1})
+
+julia> typeof(a[2:end])
+julia> typeof(a[2:end])
+julia> # check for existence using in(a, x)
+julia> # check for existence using in(a, x)
+
+julia> in(a, 4)
+julia> in(a, 4)
+false
+
+julia> length(a)
+julia> length(a)
+3
+
+julia> # Tupes
+julia> # Tupel
+julia> # Tupe
+julia> # Tuples are typed and immutable
+julia> # Tuples are typed and immutable
+
+julia> typeof((1, 'a'))
+julia> typeof((1, 'a'))
+Tuple{Int64, Char}
+
+julia> in(t
+julia> in(julia> in
+julia> i
+julia> # Oops, I reversed params for in(..) fn
+julia> # Oops, I reversed params for in(..) fn
+
+julia> in(2, a)
+julia> in(2, a)
+true
+
+julia> in(true,. julia> in(true,.julia> in(true, (1, 'a'))
+julia> in(true, (1, 'a'))
+true
+
+julia> help?> ??help?> ?help?> julia> # What the heck??
+julia> # What the heck??
+
+julia> tup = (1.julia> tup = (1, 2,julia> tup = (1, 2
+julia> tup = (1, julia> tup = (1,julia> tup = (1
+julia> tup = (0, 'b')
+julia> tup = (0, 'b')
+(0, 'b')
+
+julia> in(0, tup)
+julia> in(0, tup)
+true
+
+julia> in(false, tup)
+julia> in(false, tup)
+true
+
+julia> in(false, tup)
+julia> in(false, tup)
+julia> in(false, tup)
+julia> in(false, tup)
+julia> in(false, tup)
+julia> in(false, tup)
+julia> in(false, tup)
+julia> in(false, tup)
+julia> in(false, tup)
+julia> in(fals, tup)
+julia> in(fal, tup)
+julia> in(fa, tup)
+julia> in(f, tup)
+julia> in(, tup)
+julia> in(t, tup)
+julia> in(tr, tup)
+julia> in(tru, tup)
+julia> in(true, tup)
+julia> in(true, tup)
+false
+
+julia> # GOdd
+julia> # GOd
+julia> # GODDAMI
+Julia> # GODDAMMIT; julia does implicit conversion??
+julia> # GODDAMMIT; julia does implicit conversion?
+julia> # GODDAMMIT; julia does implicit conversion??
+julia> # GODDAMMIT; julia does implicit conversion??
+
+julia> # MU
+Julia> # Multipe
+julia> # Multiple assignment using tuples; same as python
+julia> # Multiple assignment using tuples; same as python
+
+julia> a, ,julia> a, b, c =julia> a, b, c julia> a, b, c
+julia> a, b, julia> a, b,julia> a, b
+julia> a, julia> a,julia> a
+julia> m
+julia> m,julia> m, julia> m, n
+julia> m, n, o = 1, 2, 3
+julia> m, n, o = 1, 2, 3
+(1, 2, 3)
+
+julia> m
+julia> m
+1
+
+julia> (1
+julia> (julia> # Dix
+julia> # Dictionaries are slightly co
+julia> # Dictionaries are slightly cumbersonm
+julia> # Dictionaries are slightly cumberson
+julia> # Dictionaries are slightly cumbersome
+julia> # Dictionaries are slightly cumbersome
+
+julia> dict = julia> dict =julia> dict julia> dict
+julia> dic
+julia> di
+julia> d
+julia> d = Dict
+julia> d = Dic
+julia> d = Di
+julia> d = D
+Julia> d = julia> d =julia> d julia> d
+julia> d
+julia> dic
+julia> dic
+julia> dic
+julia> dic
+julia> dic
+julia> dic
+julia> dict = F
+Julia> dict = Dict["one" => 1, "two" => 2]julia> dict = Dict["one" => 1, "two" => 2]
+ERROR: MethodError: Cannot `convert` an object of type 
+  Pair{String, Int64} to an object of type 
+  Dict
+Closest candidates are:
+  convert(::Type{T}, !Matched::T) where T<:AbstractDict at ~/.asdf/installs/julia/1.7.2/share/julia/base/abstractdict.jl:522
+  convert(::Type{T}, !Matched::AbstractDict) where T<:AbstractDict at ~/.asdf/installs/julia/1.7.2/share/julia/base/abstractdict.jl:524
+  convert(::Type{T}, !Matched::T) where T at ~/.asdf/installs/julia/1.7.2/share/julia/base/essentials.jl:218
+  ...
+Stacktrace:
+ [1] setindex!(A::Vector{Dict}, x::Pair{String, Int64}, i1::Int64)
+   @ Base ./array.jl:903
+ [2] getindex(#unused#::Type{Dict}, x::Pair{String, Int64}, y::Pair{String, Int64})
+   @ Base ./array.jl:413
+ [3] top-level scope
+   @ REPL[85]:1
+
+julia> dict = Dict["one" => 1, "two" => 2]julia> dict = Dict["one" => 1, "two" => 2]julia> dict = Dict["one" => 1, "two" => 2]julia> dict = Dict["one" => 1, "two" => 2)
+julia> dict = Dict["one" => 1, "two" => 2)
+julia> dict = Dict["one" => 1, "two" => 2)
+julia> dict = Dict["one" => 1, "two" => 2)
+julia> dict = Dict["one" => 1, "two" => 2)
+julia> dict = Dict["one" => 1, "two" => 2)
+julia> dict = Dict"one" => 1, "two" => 2)
+julia> dict = Dict("one" => 1, "two" => 2)
+julia> dict = Dict("one" => 1, "two" => 2)  # Oops, used square braces by mista
+julia> dict = Dict("one" => 1, "two" => 2)  # Oops, used square braces by mistae
+julia> dict = Dict("one" => 1, "two" => 2)  # Oops, used square braces by mista
+julia> dict = Dict("one" => 1, "two" => 2)  # Oops, used square braces by mistak
+julia> dict = Dict("one" => 1, "two" => 2)  # Oops, used square braces by mistake
+julia> dict = Dict("one" => 1, "two" => 2)  # Oops, used square braces by mistake
+Dict{String, Int64} with 2 entries:
+  "two" => 2
+  "one" => 1
+
+julia> dict = Dict("one" => 1, "two" => 2)  # Oops, used square braces by mistake
+julia> dict = Dict("one" => 1, "two" => 2)  # Oops, used square braces by mistake
+julia> dict = Dict["one" => 1, "two" => 2]julia> dict = Dict["one" => 1, "two" => 2]julia> dict = Dict["one" => 1, "two" => 2]julia> dict = Dict["one" => 1, "two" => 2
+julia> dict = Dict["one" => 1, "two" => julia> dict = Dict["one" => 1, "two" =>julia> dict = Dict["one" => 1, "two" =julia> dict = Dict["one" => 1, "two" julia> dict = Dict["one" => 1, "two"julia> dict = Dict["one" => 1, "two
+julia> dict = Dict["one" => 1, "tw
+julia> dict = Dict["one" => 1, "t
+julia> dict = Dict["one" => 1, "julia> dict = Dict["one" => 1, julia> dict = Dict["one" => 1,julia> dict = Dict["one" => 1
+julia> dict = Dict["one" => julia> dict = Dict["one" =>julia> dict = Dict["one" =julia> dict = Dict["one" julia> dict = Dict["one"julia> dict = Dict["one
+julia> dict = Dict["on
+julia> dict = Dict["o
+julia> dict = Dict["julia> dict = Dict[julia> dict = Dict('a' => 1, 2 => 2
+julia> dict = Dict('a' => 1, 2 => "shopu
+julia> dict = Dict('a' => 1, 2 => "shop
+julia> dict = Dict('a' => 1, 2 => "should fail")
+julia> dict = Dict('a' => 1, 2 => "should fail")
+Dict{Any, Any} with 2 entries:
+  2   => "should fail"
+  'a' => 1
+
+julia> nope
+julia> nop
+julia> no
+julia> n
+julia> # Nope, dicio
+julia> # Nope, dicit
+julia> # Nope, dici
+julia> # Nope, dictionaries with mismatching type julia> # Nope, dictionaries with mismatching type pairs just uses Dictt
+julia> # Nope, dictionaries with mismatching type pairs just uses Dict[julia> # Nope, dictionaries with mismatching type pairs just uses Dict{Amy
+julia> # Nope, dictionaries with mismatching type pairs just uses Dict{Am
+julia> # Nope, dictionaries with mismatching type pairs just uses Dict{Any, Any
+julia> # Nope, dictionaries with mismatching type pairs just uses Dict{Any, Any}
+julia> # Nope, dictionaries with mismatching type pairs just uses Dict{Any, Any}
+
+
+julia> dict['a']julia> dict['a']
+1
+
+julia> dict['a']julia> dict['a']julia> dict['a']julia> dict['a']julia> dict['a']julia> dict['a']julia> dict[a']julia> dict["a']julia> dict["a']julia> dict["a']julia> dict["a']julia> dict["a']julia> dict["a]julia> dict["a"]julia> dict["a"]
+ERROR: KeyError: key "a" not found
+Stacktrace:
+ [1] getindex(h::Dict{Any, Any}, key::String)
+   @ Base ./dict.jl:481
+ [2] top-level scope
+   @ REPL[90]:1
+
+julia> in((julia> in(julia> in
+julia> i
+julia> in(('a'. julia> in(('a'.julia> in(('a' => 1), dict)
+julia> in(('a' => 1), dict)
+true
+
+julia> get(dict, 'b', "default")
+julia> get(dict, 'b', "default")
+"default"
+
+julia> # else if julia> # else if"julia> # else if"julia> # else if"julia> # else if"julia> # else if"julia> # else if"julia> # else if"julia> # else if"julia> # else if"julia> # "else if"julia> # "else if"julia> # "else if"julia> # "else if"julia> # "else if"julia> # "else if"julia> # "else if"julia> # "else if"julia> # "elseif"julia> # "elseif" os julia> # "elseif" os
+julia> # "elseif" o
+julia> # "elseif" isf
+julia> # "elseif" is for else if
+julia> # "elseif" is for else if
+
+julia> of
+julia> o
+julia> if false
+julia> if false
+  julia> if false
+julia> if false
+julia> if false
+r
+julia> if false
+print("meh")
+julia> if false
+print("meh")
+elseif true
+julia> if false
+print("meh")
+elseif true
+print("mehh")
+julia> if false
+print("meh")
+elseif true
+print("mehh")
+em
+julia> if false
+print("meh")
+elseif true
+print("mehh")
+end
+julia> if false
+print("meh")
+elseif true
+print("mehh")
+end
+mehh
+julia> for m in [1, 2]julia> for m in [1, 2]
+print(m)
+julia> for m in [1, 2]
+print(m)
+end
+julia> for m in [1, 2]
+print(m)
+end
+12
+julia> # Weird alternate syntax fir julia> # Weird alternate syntax fir
+julia> # Weird alternate syntax fi
+julia> # Weird alternate syntax for iteration
+julia> # Weird alternate syntax for iteration
+
+julia> for m = [1, 2]julia> for m = [1, 2]
+pt
+julia> for m = [1, 2]
+print(julia> for m = [1, 2]
+println(m)
+julia> for m = [1, 2]
+println(m)
+end
+julia> for m = [1, 2]
+println(m)
+end
+1
+2
+
+julia> for k, v in julia> for k, v in
+julia> for k, v i
+julia> for k, v julia> for k, v
+julia> for k, julia> for k,julia> for k
+julia> for (k, v) in Dict("julia> for (k, v) in Dict('a' => 1)
+julia> for (k, v) in Dict('a' => 1)
+println(julia> for (k, v) in Dict('a' => 1)
+println(k)
+julia> for (k, v) in Dict('a' => 1)
+println(k)
+end
+julia> for (k, v) in Dict('a' => 1)
+println(k)
+end
+a
+
+julia> # use `let` for local scopes
+julia> # use `let` for local scopes
+
+julia> let kk = 1
+julia> let kk = true
+julia> let kk = true
+pe
+julia> let kk = true
+print(kk)
+julia> let kk = true
+print(kk)
+end
+julia> let kk = true
+print(kk)
+end
+true
+julia> print(kk)
+julia> print(kk)
+ERROR: UndefVarError: kk not defined
+Stacktrace:
+ [1] top-level scope
+   @ REPL[101]:1
+
+julia> # The `error` function throws an error with message passed
+julia> # The `error` function throws an error with message passed
+
+julia> error(:julia> error("wheeee")
+julia> error("wheeee")
+ERROR: wheeee
+Stacktrace:
+ [1] error(s::String)
+   @ Base ./error.jl:33
+ [2] top-level scope
+   @ REPL[103]:1
+
+julia> # Functions return last expression
+julia> # Functions return last expression
+
+julia> function yo()
+julia> function yo()
+print("yo")
+julia> function yo()
+print("yo")
+1
+julia> function yo()
+print("yo")
+1
+end
+julia> function yo()
+print("yo")
+1
+end
+yo (generic function with 1 method)
+
+julia> kk julia> kk = yo()
+julia> kk = yo()
+yo1
+
+julia> kk
+julia> kk
+1
+
+julia> # Compact functions are just assignments julia> # Compact functions are just assignments
+julia> # Compact functions are just assignments
+
+julia> fn() = 1 julia> fn() = 1
+julia> fn() = julia> fn() =julia> fn() julia> fn()
+julia> fn(a, b) = a + b
+julia> fn(a, b) = a + b
+fn (generic function with 1 method)
+
+julia> g
+julia> fnm
+julia> fn(1m
+julia> fn(1, 2 julia> fn(1, 2)_julia> fn(1, 2)
+julia> fn(1, 2)
+3
+
+julia> fyb
+julia> fy
+julia> func
+julia> fun
+julia> fu
+julia> f
+julia> gn
+julia> g
+julia> function mm(args,,,julia> function mm(args,,julia> function mm(args,julia> function mm(args...)
+julia> function mm(args...)
+# Var args
+julia> function mm(args...)
+# Var args
+return args
+julia> function mm(args...)
+# Var args
+return args
+end
+julia> function mm(args...)
+# Var args
+return args
+end
+mm (generic function with 1 method)
+
+julia> mm*=julia> mm*julia> mm(1m2m
+julia> mm(1m2
+julia> mm(1m
+julia> mm(1, 2(julia> mm(1, 2(
+julia> mm(1, 2(julia> mm(1, 2)
+julia> mm(1, 2)
+(1, 2)
+
+julia> nn*julia> nn
+julia> n
+julia> mm([3,4]...)
+julia> mm([3,4]...)
+(3, 4)
+
+julia> function
+julia> functio
+julia> functi
+julia> funct
+julia> func
+julia> fun
+julia> fu
+julia> f
+julia> m
+julia> mm
+julia> mm
+julia> mm(args...) = args
+julia> mm(args...) = args
+mm (generic function with 1 method)
+
+julia> function kwargs(a, julia> function kwargs(a,julia> function kwargs(a; b=1
+julia> function kwargs(a; b=julia> function kwargs(a; b)
+julia> function kwargs(a; b, c-1
+julia> function kwargs(a; b, c-julia> function kwargs(a; b, c=1(julia> function kwargs(a; b, c=1)
+julia> function kwargs(a; b, c=1)
+print
+julia> function kwargs(a; b, c=1)
+prin
+julia> function kwargs(a; b, c=1)
+pri
+julia> function kwargs(a; b, c=1)
+pr
+julia> function kwargs(a; b, c=1)
+p
+julia> function kwargs(a; b, c=1)
+print(b)
+julia> function kwargs(a; b, c=1)
+print(b)
+end
+julia> function kwargs(a; b, c=1)
+print(b)
+end
+kwargs (generic function with 1 method)
+
+julia> ka
+julia> kwargs julia> kwargs(1, julia> kwargs(1,julia> kwargs(1; 2)
+julia> kwargs(1; 2)
+ERROR: syntax: invalid keyword argument syntax "2" around REPL[116]:1
+Stacktrace:
+ [1] top-level scope
+   @ REPL[116]:1
+
+julia> kwargs(1; 2)
+julia> kwargs(1; 2)
+julia> kwargs(1; 2)
+julia> kwargs(1; 2)
+julia> kwargs(1; 2)
+julia> kwargs(1; b2)
+julia> kwargs(1; b=2)
+julia> kwargs(1; b=2)
+2
+julia> # Stabbe julia> # Stabbe
+julia> # Stabb
+julia> # Stabby lambdas for creatiung julia> # Stabby lambdas for creatiung
+julia> # Stabby lambdas for creatiun
+julia> # Stabby lambdas for creatiu
+julia> # Stabby lambdas for creating anonymour
+julia> # Stabby lambdas for creating anonymous fns
+julia> # Stabby lambdas for creating anonymous fns
+
+julia> (x -> x+1) julia> (x -> x+1)(1)
+julia> (x -> x+1)(1)
+2
+
+julia> # List compres
+julia> # List comprehensions like python
+julia> # List comprehensions like python
+
+julia> [x+1 for x in [1, 2, 3] if x > 1]julia> [x+1 for x in [1, 2, 3] if x > 1]
+2-element Vector{Int64}:
+ 3
+ 4
+
+julia> # Types are first class
+julia> # Types are first class
+
+julia> typed
+julia> typefo
+julia> typef
+julia> typeof(Int8)
+julia> typeof(Int8)
+DataType
+
+julia> # New types using `struct`julia> # New types using `struct`
+
+julia> struct Yo
+julia> struct Yo
+yoyo::Int64
+julia> struct Yo
+yoyo::Int64
+banana  # Equic
+julia> struct Yo
+yoyo::Int64
+banana  # Equi
+julia> struct Yo
+yoyo::Int64
+banana  # Equv
+julia> struct Yo
+yoyo::Int64
+banana  # Equiv tyo
+julia> struct Yo
+yoyo::Int64
+banana  # Equiv ty
+julia> struct Yo
+yoyo::Int64
+banana  # Equiv to LL
+Julia> struct Yo
+yoyo::Int64
+banana  # Equiv to L
+Julia> struct Yo
+yoyo::Int64
+banana  # Equiv to ::Any
+julia> struct Yo
+yoyo::Int64
+banana  # Equiv to ::Any
+end
+julia> struct Yo
+yoyo::Int64
+banana  # Equiv to ::Any
+end
+
+julia> Yo*(julia> Yo*julia> Yo(1m julia> Yo(1m
+julia> Yo(1, 'a')(julia> Yo(1, 'a')
+julia> Yo(1, 'a')
+Yo(1, 'a')
+
+julia> # Type i
+julia> # Type value IS the constructor
+julia> # Type value IS the constructor
+
+julia> typeof julia> typeof
+julia> typeo
+julia> type
+julia> typ
+julia> ty
+julia> t
+julia> # Type value IS the constructor
+julia> # Type value IS the constructor
+julia> Yo(1, 'a')
+julia> Yo(1, 'a')
+julia> Yo(1, 'a')
+julia> Yo(1, 'a')
+julia> oYo(1, 'a')
+julia> ooYo(1, 'a')
+julia> oooYo(1, 'a')
+julia> ooooYo(1, 'a')
+julia> oooo Yo(1, 'a')
+julia> ooooYo(1, 'a')
+julia> oooYo(1, 'a')
+julia> ooo Yo(1, 'a')
+julia> ooo =Yo(1, 'a')
+julia> ooo = Yo(1, 'a')
+julia> ooo = Yo(1, 'a')
+Yo(1, 'a')
+
+julia> typeof(ooo)(2, 'b')
+julia> typeof(ooo)(2, 'b')
+Yo(2, 'b')
+
+julia> Number(1)  # is an abstt
+julia> Number(1)  # is an abstract type so this would fail
+julia> Number(1)  # is an abstract type so this would fail
+1
+
+julia> # Np
+julia> # Nope julia> # Nope, l
+julia> # Nope, this one isnt abstract
+julia> # Nope, this one isnt abstract
+
+julia> AbstractString("a")
+julia> AbstractString("a")
+ERROR: MethodError: no constructors have been defined for AbstractString
+Stacktrace:
+ [1] top-level scope
+   @ REPL[132]:1
+
+julia> AbstractString("a")
+julia> AbstractString("a")
+julia> AbstractString("a")
+julia> AbstractString("a"julia> AbstractString("a
+julia> AbstractString("julia> AbstractString(julia> AbstractString)
+julia> AbstractString)
+julia> sAbstractString)
+julia> suAbstractString)
+julia> subAbstractString)
+julia> subtAbstractString)
+julia> subtyAbstractString)
+julia> subtypAbstractString)
+julia> subtypeAbstractString)
+julia> subtypesAbstractString)
+julia> subtypes(AbstractString)
+julia> subtypes(AbstractString)
+4-element Vector{Any}:
+ String
+ SubString
+ SubstitutionString
+ Test.GenericString
+
+julia> supertype(Strint
+julia> supertype(String)
+julia> supertype(String)
+AbstractString
+
+julia> anb
+julia> an
+julia> abstract tpy
+julia> abstract tp
+julia> abstract type Cat
+julia> abstract type Cat
+meow
+julia> abstract type Cat
+meow
+ERROR: syntax: "abstract type" at REPL[135]:1 expected "end", got "meow"
+Stacktrace:
+ [1] top-level scope
+   @ none:1
+
+julia> en
+julia> e
+julia> abstract type Cat
+meow
+julia> abstract type Cat
+meow
+julia> abstract type Cat
+meow
+julia> abstract type Cat
+meo
+julia> abstract type Cat
+me
+julia> abstract type Cat
+m
+julia> abstract type Cat
+julia> abstract type Cat end
+julia> abstract type Cat end
+
+julia> struct Lion <: Cat
+julia> struct Lion <: Cat
+meow
+julia> struct Lion <: Cat
+meow
+end
+julia> struct Lion <: Cat
+meow
+end
+
+julia> Lion() julia> Lion()
+julia> Lion(julia> Lion
+julia> Lio
+julia> Li
+julia> L
+Julia> # We can define mul
+julia> # We can define mu
+julia> # We can define more constructors since julia has multiple dispatch
+julia> # We can define more constructors since julia has multiple dispatch
+
+julia> Lion() = Lion("roar")
+julia> Lion() = Lion("roar")
+Lion
+
+julia> Lion()
+julia> Lion()
+Lion("roar")
+
+julia> stryct
+julia> stryc
+julia> stry
+julia> struct Panther <>julia> struct Panther <: Lion
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+ERROR: invalid subtyping in definition of Panther
+Stacktrace:
+ [1] top-level scope
+   @ REPL[141]:1
+
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> Lion()
+julia> Lion()
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+mPanther() = new("grrr")
+end
+julia> struct Panther <: Lion
+mePanther() = new("grrr")
+end
+julia> struct Panther <: Lion
+meoPanther() = new("grrr")
+end
+julia> struct Panther <: Lion
+meowPanther() = new("grrr")
+end
+julia> struct Panther <: Lion
+meowPanther() = new("grrr")
+end
+ERROR: invalid subtyping in definition of Panther
+Stacktrace:
+ [1] top-level scope
+   @ REPL[142]:1
+
+julia> struct Panther <: Lion
+meowPanther() = new("grrr")
+end
+julia> struct Panther <: Lion
+meowPanther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lion
+Panther() = new("grrr")
+end
+julia> struct Panther <: Lio
+Panther() = new("grrr")
+end
+julia> struct Panther <: Li
+Panther() = new("grrr")
+end
+julia> struct Panther <: L
+Panther() = new("grrr")
+end
+julia> struct Panther <:
+Panther() = new("grrr")
+end
+julia> struct Panther <: C
+Panther() = new("grrr")
+end
+julia> struct Panther <: Ca
+Panther() = new("grrr")
+end
+julia> struct Panther <: Cat
+Panther() = new("grrr")
+end
+julia> struct Panther <: Cat
+Panther() = new("grrr")
+end
+
+julia> # Ibk
+julia> # Ib
+julia> # I
+Julia> # I
+Julia> # Only abstract types can be sy
+julia> # Only abstract types can be subtyoed
+julia> # Only abstract types can be subtyoe
+julia> # Only abstract types can be subtyo
+julia> # Only abstract types can be subtyped
+julia> # Only abstract types can be subtyped
+
+julia> abstracrt
+julia> abstracr
+julia> abstract tp
+julia> abstract type WeirdCat <: Cat end
+julia> abstract type WeirdCat <: Cat end
+
+julia> # <: can also check
+julia> # <: can also check
+
+julia> WeirdCat <: Cat
+julia> WeirdCat <: Cat
+true
+
+julia> Cat <>julia> Cat <: St
+julia> Cat <: S
+Julia> Cat <: AbstractString
+julia> Cat <: AbstractString
+false
+
+julia> Cat <>julia> Cat <: Data
+julia> Cat <: DataType
+julia> Cat <: DataType
+false
+
+julia> String :julia> String <>julia> String <julia> String julia> String
+julia> Strin
+julia> Stri
+julia> Str
+julia> St
+julia> S
+Julia> suy
+julia> super
+julia> supertype(Cat)
+julia> supertype(Cat)
+Any
+
+julia> # Create a primitive convre
+julia> # Create a primitive convr
+julia> # Create a primitive conv
+julia> # Create a primitive concrete type with reserved bits
+julia> # Create a primitive concrete type with reserved bits
+
+julia> primitive type Banana <: Abs
+julia> primitive type Banana <: AbstractS
+Julia> primitive type Banana <: AbstractStr
+julia> primitive type Banana <: AbstractString end
+julia> primitive type Banana <: AbstractString en
+julia> primitive type Banana <: AbstractString e
+julia> primitive type Banana <: AbstractString 12 end  # 12 bits
+julia> primitive type Banana <: AbstractString 12 end  # 12 bits
+ERROR: invalid number of bits in primitive type Banana
+Stacktrace:
+ [1] top-level scope
+   @ REPL[152]:1
+
+julia> primitive type Banana <: AbstractString 12 end  # 12 bits
+julia> primitive type Banana <: AbstractString 12 end  # 12 bits
+julia> primitive type Banana <: AbstractString 12 end  # 12 bits
+julia> primitive type Banana <: AbstractString 12 end  # 12 bits
+julia> primitive type Banana <: AbstractString 12 end  # 12 bits
+julia> primitive type Banana <: AbstractString 12 end  # 12 bits
+julia> primitive type Banana <: AbstractString 12 end  # 12 bits
+julia> primitive type Banana <: AbstractString 12 end  # 12 bits
+julia> primitive type Banana <: AbstractString 12 end  # 12 bits
+julia> primitive type Banana <: AbstractString 12 end  # 12 bits
+julia> primitive type Banana <: AbstractString 12 end  # 12 bits
+julia> primitive type Banana <: AbstractString 12 end  # 12 bits
+julia> primitive type Banana <: AbstractString 12 end  # 12 bits
+julia> primitive type Banana <: AbstractString 12 end  # 12 bits
+julia> primitive type Banana <: AbstractString 12 end  # 12 bits
+julia> primitive type Banana <: AbstractString 12 end  # 12 bits
+julia> primitive type Banana <: AbstractString 12 end  # 12 bits
+julia> primitive type Banana <: AbstractString 12 end  # 12 bits
+julia> primitive type Banana <: AbstractString 12 end  # 12 bits
+julia> primitive type Banana <: AbstractString 12 end  # 12 bits
+julia> primitive type Banana <: AbstractString 12 end  # 12 bits
+julia> primitive type Banana <: AbstractString 12 end  # 12 bits
+julia> primitive type Banana <: AbstractString 12 end  # 12 bits
+julia> primitive type Banana <: AbstractString 12 end  # 12 bits
+julia> primitive type Banana <: AbstractString 12 end  # 12 bits
+julia> primitive type Banana <: AbstractString 12 end  # 12 bits
+julia> primitive type Banana <: AbstractString 12 end  # 12 bits
+julia> primitive type Banana <: AbstractString 12 end  # 12 bits
+julia> primitive type Banana <: AbstractString 12 end  # 12 bits
+julia> primitive type Banana <: AbstractString 12 end  # 12 bits
+julia> primitive type Banana <: AbstractString 12 end  # 1 bits
+julia> primitive type Banana <: AbstractString 12 end  # 16 bits
+julia> primitive type Banana <: AbstractString 12 end  # 16 bits
+julia> primitive type Banana <: AbstractString 12 end  # 16 bits
+julia> primitive type Banana <: AbstractString 12 end  # 16 bits
+julia> primitive type Banana <: AbstractString 12 end  # 16 bits
+julia> primitive type Banana <: AbstractString 12 end  # 16 bits
+julia> primitive type Banana <: AbstractString 12 end  # 16 bits
+julia> primitive type Banana <: AbstractString 12 end  # 16 bits
+julia> primitive type Banana <: AbstractString 12 end  # 16 bits
+julia> primitive type Banana <: AbstractString 12 end  # 16 bits
+julia> primitive type Banana <: AbstractString 12 end  # 16 bits
+julia> primitive type Banana <: AbstractString 1 end  # 16 bits
+julia> primitive type Banana <: AbstractString 16 end  # 16 bits
+julia> primitive type Banana <: AbstractString 16 end  # 16 bits
+
+julia> Banana(1)
+julia> Banana(1)
+ERROR: MethodError: no method matching Banana(::Int64)
+Stacktrace:
+ [1] top-level scope
+   @ REPL[154]:1
+
+julia> Banana(1)
+julia> Banana(1)
+julia> Banana(1)
+julia> Banana(1)
+julia> Banana(1)
+julia> Banana(1)
+julia> Banana()
+julia> Banana(")
+julia> Banana("a)
+julia> Banana("a')
+julia> Banana("a)
+julia> Banana("a")
+julia> Banana("a")
+ERROR: MethodError: no method matching Banana(::String)
+Stacktrace:
+ [1] top-level scope
+   @ REPL[155]:1
+
+julia> # A constructor to create values of the type Banana
+julia> # A constructor to create values of the type Banana
+
+julia> Banana(xLL
+Julia> Banana(xL
+Julia> Banana(x::String) = reinterpret(Ban
+julia> Banana(x::String) = reinterpret(Banana, x)
+julia> Banana(x::String) = reinterpret(Banana, x)
+Banana
+
+julia> Banana(x::String) = reinterpret(Banana, x)
+julia> Banana(x::String) = reinterpret(Banana, x)
+julia> # A constructor to create values of the type Banana
+julia> # A constructor to create values of the type Banana
+julia> Banana("a")
+julia> Banana("a")
+julia> Banana("a")
+julia> Banana("a")
+ERROR: bitcast: expected primitive type value for second argument
+Stacktrace:
+ [1] reinterpret
+   @ ./essentials.jl:443 [inlined]
+ [2] Banana(x::String)
+   @ Main ./REPL[157]:1
+ [3] top-level scope
+   @ REPL[158]:1
+
+julia> Banana("a")
+julia> Banana("a")
+julia> Banana("a")
+julia> Banana("a")
+julia> Banana("a")
+julia> Banana("a")
+julia> Banana("a")
+julia> Banana(S"a")
+julia> Banana(St"a")
+julia> Banana(Str"a")
+julia> Banana(Stri"a")
+julia> Banana(Strin"a")
+julia> Banana(String"a")
+julia> Banana(String("a")
+julia> Banana(String("a")
+julia> Banana(String("a")
+julia> Banana(String("a")
+julia> Banana(String("a"))
+julia> Banana(String("a"))
+ERROR: bitcast: expected primitive type value for second argument
+Stacktrace:
+ [1] reinterpret
+   @ ./essentials.jl:443 [inlined]
+ [2] Banana(x::String)
+   @ Main ./REPL[157]:1
+ [3] top-level scope
+   @ REPL[159]:1
+
+julia> Banana(String("a"))
+julia> Banana(String("a"))
+julia> Banana("a")
+julia> Banana("a")
+julia> Banana(x::String) = reinterpret(Banana, x)
+julia> Banana(x::String) = reinterpret(Banana, x)
+julia> # A constructor to create values of the type Banana
+julia> # A constructor to create values of the type Banana
+julia> Banana(x::String) = reinterpret(Banana, x)
+julia> Banana(x::String) = reinterpret(Banana, x)
+julia> Banana(x::String) = reinterpret(Banana, x)
+julia> Banana(x::String) = reinterpret(Banana, x)
+julia> Banana(x::String) = reinterpret(Banana, x)
+julia> Banana(x::String) = reinterpret(Banana, x)
+julia> Banana(x::String) = reinterpret(Banana, x)
+julia> Banana(x::String) = reinterpret(Banan, x)
+julia> Banana(x::String) = reinterpret(Bana, x)
+julia> Banana(x::String) = reinterpret(Ban, x)
+julia> Banana(x::String) = reinterpret(Ba, x)
+julia> Banana(x::String) = reinterpret(B, x)
+julia> Banana(x::String) = reinterpret(, x)
+julia> Banana(x::String) = reinterpret(S, x)
+julia> Banana(x::String) = reinterpret(St, x)
+julia> Banana(x::String) = reinterpret(Str, x)
+julia> Banana(x::String) = reinterpret(Stri, x)
+julia> Banana(x::String) = reinterpret(Strin, x)
+julia> Banana(x::String) = reinterpret(String, x)
+julia> Banana(x::String) = reinterpret(String, x)
+Banana
+
+julia> Banana(x::String) = reinterpret(String, x)
+julia> Banana(x::String) = reinterpret(String, x)
+julia> Banana(String("a"))
+julia> Banana(String("a"))
+julia> Banana("a")
+julia> Banana("a")
+julia> Banana(String("a"))
+julia> Banana(String("a"))
+julia> Banana("a")
+julia> Banana("a")
+julia> Banana("a")
+julia> Banana("a")
+ERROR: bitcast: target type not a leaf primitive type
+Stacktrace:
+ [1] reinterpret
+   @ ./essentials.jl:443 [inlined]
+ [2] Banana(x::String)
+   @ Main ./REPL[160]:1
+ [3] top-level scope
+   @ REPL[161]:1
+
+julia> Banana("a")
+julia> Banana("a")
+julia> Banana(x::String) = reinterpret(String, x)
+julia> Banana(x::String) = reinterpret(String, x)
+julia> Banana(String("a"))
+julia> Banana(String("a"))
+julia> Banana("a")
+julia> Banana("a")
+julia> Banana(x::String) = reinterpret(Banana, x)
+julia> Banana(x::String) = reinterpret(Banana, x)
+julia> # A constructor to create values of the type Banana
+julia> # A constructor to create values of the type Banana
+julia> Banana("a")
+julia> Banana("a")
+julia> Banana(1)
+julia> Banana(1)
+julia> primitive type Banana <: AbstractString 16 end  # 16 bits
+julia> primitive type Banana <: AbstractString 16 end  # 16 bits
+julia> primitive type Banana <: AbstractString 16 end  # 16 bits
+julia> primitive type Banana <: AbstractString 16 end  # 16 bits
+julia> primitive type Banana <: AbstractString 16 end  # 16 bits
+julia> primitive type Banana <: AbstractString 16 end  # 16 bits
+julia> primitive type Banana <: AbstractString 16 end  # 16 bits
+julia> primitive type Banana <: AbstractString 16 end  # 16 bits
+julia> primitive type Banana <: AbstractString 16 end  # 16 bits
+julia> primitive type Banana <: AbstractString 16 end  # 16 bits
+julia> primitive type Banana <: AbstractString 16 end  # 16 bits
+julia> primitive type Banana <: AbstractString 16 end  # 16 bits
+julia> primitive type Banana <: AbstractString 16 end  # 16 bits
+julia> primitive type Banana <: AbstractString 16 end  # 16 bits
+julia> primitive type Banana <: AbstractString 16 end  # 16 bits
+julia> primitive type Banana <: AbstractString 16 end  # 16 bits
+julia> primitive type Banana <: AbstracString 16 end  # 16 bits
+julia> primitive type Banana <: AbstraString 16 end  # 16 bits
+julia> primitive type Banana <: AbstrString 16 end  # 16 bits
+julia> primitive type Banana <: AbstString 16 end  # 16 bits
+julia> primitive type Banana <: AbsString 16 end  # 16 bits
+julia> primitive type Banana <: AbString 16 end  # 16 bits
+julia> primitive type Banana <: AString 16 end  # 16 bits
+julia> primitive type Banana <: String 16 end  # 16 bits
+julia> primitive type Banana <: String 16 end  # 16 bits
+ERROR: invalid subtyping in definition of Banana
+Stacktrace:
+ [1] top-level scope
+   @ REPL[162]:1
+
+julia> primitive type Banana <: String 16 end  # 16 bits
+julia> primitive type Banana <: String 16 end  # 16 bits
+julia> Banana("a")
+julia> Banana("a")
+julia> primitive type Banana <: String 16 end  # 16 bits
+julia> primitive type Banana <: String 16 end  # 16 bits
+julia> primitive type Banana <: String 16 end  # 16 bits
+julia> primitive type Banana <: String 16 end  # 16 bits
+julia> primitive type Banana <: String 16 end  # 16 bits
+julia> primitive type Banana <: String 16 end  # 16 bits
+julia> primitive type Banana <: String 16 end  # 16 bits
+julia> primitive type Banana <: String 16 end  # 16 bits
+julia> primitive type Banana <: String 16 end  # 16 bits
+julia> primitive type Banana <: IString 16 end  # 16 bits
+julia> primitive type Banana <: InString 16 end  # 16 bits
+julia> primitive type Banana <: InlString 16 end  # 16 bits
+julia> primitive type Banana <: InliString 16 end  # 16 bits
+julia> primitive type Banana <: InlinString 16 end  # 16 bits
+julia> primitive type Banana <: InlineString 16 end  # 16 bits
+julia> primitive type Banana <: InlineString 16 end  # 16 bits
+ERROR: UndefVarError: InlineString not defined
+Stacktrace:
+ [1] top-level scope
+   @ REPL[163]:1
+
+julia> # Giving up...julia> # Giving up...
+
+julia> # parametric types
+julia> # parametric types
+
+julia> struct Point[T]julia> struct Point[T
+Julia> struct Point[julia> struct Point
+julia> struct Poin
+julia> struct Poi
+julia> struct Po
+julia> struct Price[T
+Julia> struct Price[julia> struct Price
+julia> struct Pric
+julia> struct Pri
+julia> struct Pr
+julia> struct P
+Julia> struct Hi
+julia> struct H
+Julia> struct Point[T]julia> struct Point[T]
+x :julia> struct Point[T]
+x julia> struct Point[T]
+x::T
+Julia> struct Point[T]
+x::T
+y::T
+Julia> struct Point[T]
+x::T
+y::T
+end
+julia> struct Point[T]
+x::T
+y::T
+end
+ERROR: syntax: invalid type signature around REPL[166]:1
+Stacktrace:
+ [1] top-level scope
+   @ REPL[166]:1
+
+julia> struct Point[T]
+x::T
+y::T
+end
+julia> struct Point[T]
+x::T
+y::T
+end
+julia> # parametric types
+julia> # parametric types
+julia> struct Point[T]
+x::T
+y::T
+end
+julia> struct Point[T]
+x::T
+y::T
+end
+julia> struct Point[T]
+x::T
+y::T
+end
+julia> struct Point[T]
+x::T
+y::T
+end
+julia> struct Point[T]
+x::T
+y::T
+end
+julia> struct Point[T]
+x::T
+y::T
+end
+julia> struct Point[T]
+x::T
+y::T
+end
+julia> struct Point[T]
+x::T
+y::T
+end
+julia> struct Point[T]
+x::T
+y::T
+end
+julia> struct Point[T]
+x::T
+y::T
+end
+julia> struct Point[T]
+x::T
+y::T
+end
+julia> struct Point[T]
+x::T
+y::T
+end
+julia> struct Point[T]
+x::T
+y::T
+end
+julia> struct Point[T]
+x::T
+y::T
+end
+julia> struct Point[T]
+x::T
+y::T
+end
+julia> struct Point[T]
+x::T
+y::T
+end
+julia> struct Point[T]
+x::T
+y::T
+end
+julia> struct Point[T]
+x::T
+y::T
+end
+julia> struct Point[T]
+x::T
+y::T
+end
+julia> struct Point[T]
+x::T
+y::T
+end
+julia> struct Point[T]
+x::T
+y::T
+end
+julia> struct Point[T]
+x::T
+y::T
+end
+julia> struct Point[T]
+x::T
+y::T
+end
+julia> struct Point[T]
+x::T
+y::T
+end
+julia> struct Point[T]
+x::T
+y::T
+end
+julia> struct Point[T]
+x::T
+y::T
+end
+julia> struct Point[T]
+x::T
+y::T
+end
+julia> struct Point[T]
+x::T
+y::T
+end
+julia> struct Point[T]
+x::T
+y::T
+end
+julia> struct Point[T]
+x::T
+y::T
+end
+julia> struct Point[T]
+x::T
+y::T
+end
+julia> struct Point[T]
+x::T
+y::T
+end
+julia> struct Point[T]
+x::T
+y::T
+end
+julia> struct PointT]
+x::T
+y::T
+end
+julia> struct Point{T]
+x::T
+y::T
+end
+julia> struct Point{}T]
+x::T
+y::T
+end
+julia> struct Point{T]
+x::T
+y::T
+end
+julia> struct Point{T]
+x::T
+y::T
+end
+julia> struct Point{T]
+x::T
+y::T
+end
+julia> struct Point{T]
+x::T
+y::T
+end
+julia> struct Point{T]
+x::T
+y::T
+end
+julia> struct Point{T]
+x::T
+y::T
+end
+julia> struct Point{T]
+x::T
+y::T
+end
+julia> struct Point{T]
+x::T
+y::T
+end
+julia> struct Point{T]
+x::T
+y::T
+end
+julia> struct Point{T]
+x::T
+y::T
+end
+julia> struct Point{T]
+x::T
+y::T
+end
+julia> struct Point{T]
+x::T
+y::T
+end
+julia> struct Point{T]
+x::T
+y::T
+end
+julia> struct Point{T]
+x::T
+y::T
+end
+julia> struct Point{T]
+x::T
+y::T
+end
+julia> struct Point{T]
+x::T
+y::T
+end
+julia> struct Point{T]
+x::T
+y::T
+end
+julia> struct Point{T
+x::T
+y::T
+end
+julia> struct Point{T}
+x::T
+y::T
+end
+julia> struct Point{T}
+x::T
+y::T
+end
+
+julia> Point{Int}julia> Point{Int}
+Point{Int64}
+
+julia> Point{Int}julia> Point{Int}julia> Point{Int}julia> Point{Int}julia> Point{In}julia> Point{I}julia> Point{}julia> Point{F}julia> Point{Fl}julia> Point{Flo}julia> Point{Floa}julia> Point{Float}julia> Point{Float}
+ERROR: UndefVarError: Float not defined
+Stacktrace:
+ [1] top-level scope
+   @ REPL[169]:1
+
+julia> Point{Float}julia> Point{Float}julia> Point{Float}julia> Point{Float}julia> Point{Float}julia> Point{Float}julia> Point{Float6}julia> Point{Float64}julia> Point{Float64}
+Point{Float64}
+
+julia> Float64 <: Real
+julia> Float64 <: Real
+true
+
+julia> Float64 <: Real
+julia> Float64 <: Real
+julia> Float64 <: Real julia> Float64 <: Real
+julia> Float64 <: Real
+julia> (Float64 <: Real
+julia> (Float64 <: Real) && (Point{Floa
+julia> (Float64 <: Real) && (Point{Float5
+julia> (Float64 <: Real) && (Point{Float5
+julia> (Float64 <: Real) && (Point{Float5
+julia> (Float64 <: Real) && (Point{Float
+julia> (Float64 <: Real) && (Point{Float6
+julia> (Float64 <: Real) && (Point{Float64} <: Point{Re
+julia> (Float64 <: Real) && (Point{Float64} <: Point{Real}(julia> (Float64 <: Real) && (Point{Float64} <: Point{Real})
+julia> (Float64 <: Real) && (Point{Float64} <: Point{Real})
+false
+
+julia> # Vararg tuple type
+julia> # Vararg tuple type
+
+julia> struct TT{A, julia> struct TT{A, julia> struct TT{A,B,Vararg{Int}}julia> struct TT{A,B,Vararg{Int}}
+A:julia> struct TT{A,B,Vararg{Int}}
+Aa
+julia> struct TT{A,B,Vararg{Int}}
+A
+Julia> struct TT{A,B,Vararg{Int}}
+a:A
+Julia> struct TT{A,B,Vararg{Int}}
+a:A
+b:B
+Julia> struct TT{A,B,Vararg{Int}}
+a:A
+b:B
+c: julia> struct TT{A,B,Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,CVararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,C:Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,C::Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,C::Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,C::Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,C::Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,C::Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,C::Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,C::Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,C::Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,C::Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,C::Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,C::Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,C::Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,C::Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,C::Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,C::Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,C::Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,C::Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,C::Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,C::Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,C::Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,C::Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,C::Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,C::Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,C::Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,C::Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,C::Vararg{Int}}
+a:A
+b:B
+c:julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b:B
+c:julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b:B
+c:julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b:B
+c:julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c:julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::V
+Julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+Julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+emd
+julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+emd
+julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+emd
+julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+em
+julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+end
+julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+end
+ERROR: syntax: invalid variable expression in "where" around REPL[174]:1
+Stacktrace:
+ [1] top-level scope
+   @ REPL[174]:1
+
+julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+end
+julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+end
+julia> # Vararg tuple type
+julia> # Vararg tuple type
+julia> (Float64 <: Real) && (Point{Float64} <: Point{Real})
+julia> (Float64 <: Real) && (Point{Float64} <: Point{Real})
+julia> # Vararg tuple type
+julia> # Vararg tuple type
+julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+end
+julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+end
+julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+end
+julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+end
+julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+end
+julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+end
+julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+end
+julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+end
+julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+end
+julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+end
+julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+end
+julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+end
+julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+end
+julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+end
+julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+end
+julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+end
+julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+end
+julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+end
+julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+end
+julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+end
+julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+end
+julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+end
+julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+end
+julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+end
+julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+end
+julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+end
+julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+end
+julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+end
+julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+end
+julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+end
+julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+end
+julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+end
+julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+end
+julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+end
+julia> struct TT{A,B,C::Vararg{Int}}
+a::A
+b::B
+c::C
+end
+julia> struct TT{A,B,C:Vararg{Int}}
+a::A
+b::B
+c::C
+end
+julia> struct TT{A,B,C<:Vararg{Int}}
+a::A
+b::B
+c::C
+end
+julia> struct TT{A,B,C<:Vararg{Int}}
+a::A
+b::B
+c::C
+end
+ERROR: TypeError: in TypeVar, in upper bound, expected Type, got Vararg{Int64}
+Stacktrace:
+ [1] TypeVar(n::Symbol, ub::Any)
+   @ Core ./boot.jl:252
+ [2] top-level scope
+   @ REPL[175]:1
+
+julia>
+               _
+   _       _ _(_)_     |  Documentation: https://docs.julialang.org
+  (_)     | (_) (_)    |
+   _ _   _| |_  __ _   |  Type "?" for help, "]?" for Pkg help.
+  | | | | | | |/ _` |  |
+  | | |_| | | | (_| |  |  Version 1.7.2 (2022-02-06)
+ _/ |\__'_|_|_|\__'_|  |  Official https://julialang.org/ release
+|__/                   |
+
+julia> # s
+julia> # Super types can have chains
+julia> # Super types can have chains
+
+julia> super
+julia> supertype(In
+julia> supertype(In
+julia> supertype(I
+Julia> supertype(Int64)
+julia> supertype(Int64)
+Signed
+
+julia> supertype(Int64)
+julia> supertype(Int64)
+julia> supertype(Int64)
+julia> supertype(Int64)
+julia> supertype(Int6)
+julia> supertype(Int)
+julia> supertype(In)
+julia> supertype(I)
+julia> supertype()
+julia> supertype(S)
+julia> supertype(Si)
+julia> supertype(Sig)
+julia> supertype(Sign)
+julia> supertype(Signe)
+julia> supertype(Signer)
+julia> supertype(Signe)
+julia> supertype(Signed)
+julia> supertype(Signedf)
+julia> supertype(Signed)
+julia> supertype(Signed)
+Integer
+
+julia> supertype(Signed)
+julia> supertype(Signed)
+julia> supertype(Signed)
+julia> supertype(Signed)
+julia> supertype(Signe)
+julia> supertype(Sign)
+julia> supertype(Sign=)
+julia> supertype(Sign)
+julia> supertype(Sig)
+julia> supertype(Si)
+julia> supertype(S)
+julia> supertype()
+julia> supertype(I)
+julia> supertype(In)
+julia> supertype(Int)
+julia> supertype(Inte)
+julia> supertype(Inter)
+julia> supertype(Inte)
+julia> supertype(Integ)
+julia> supertype(Intege)
+julia> supertype(Integer)
+julia> supertype(Integer)
+Real
+
+julia> supertype(Integer)
+julia> supertype(Integer)
+julia> supertype(Integer)
+julia> supertype(Integer)
+julia> supertype(Intege)
+julia> supertype(Integ)
+julia> supertype(Inte)
+julia> supertype(Int)
+julia> supertype(In)
+julia> supertype(I)
+julia> supertype()
+julia> supertype(R)
+julia> supertype(Re)
+julia> supertype(Rea)
+julia> supertype(Real)
+julia> supertype(Real)
+Number
+
+julia> supertype(Real)
+julia> supertype(Real)
+julia> supertype(Real)
+julia> supertype(Real)
+julia> supertype(Real)
+julia> supertype(Real)
+julia> supertype(Rea)
+julia> supertype(Re)
+julia> supertype(R)
+julia> supertype()
+julia> supertype(N)
+julia> supertype(Nu)
+julia> supertype(Num)
+julia> supertype(Numb)
+julia> supertype(Numbe)
+julia> supertype(Number)
+julia> supertype(Number)
+Any
+
+julia> supertype(Number)
+julia> supertype(Number)
+julia> supertype(Number)
+julia> supertype(Number)
+julia> supertype(Numbe)
+julia> supertype(Numb)
+julia> supertype(Num)
+julia> supertype(Nu)
+julia> supertype(N)
+julia> supertype()
+julia> supertype(A)
+julia> supertype(An)
+julia> supertype(Any)
+julia> supertype(Any)
+Any
+
+julia> # Any is its wo
+julia> # Any is its w
+julia> # Any is its own supertype??
+julia> # Any is its own supertype??
+
+julia> Any <>julia> Any <: Any
+julia> Any <: Any
+true
+
+julia> (reverse-i-search)`': (reverse-i-search)`a': supertype(Real)(reverse-i-search)`ab': abstract type WeirdCat <: Cat end(reverse-i-search)`abs': abstract type WeirdCat <: Cat end(reverse-i-search)`abst': abstract type WeirdCat <: Cat end
+julia> abstract type WeirdCat <: Cat end
+julia> abstract type WeirdCat <: Cat end
+julia> abstract type WeirdCat <: Cat end
+julia> abstract type WeirdCat <: Cat end
+julia> abstract type WeirdCat <: Cat end
+julia> abstract type WeirdCat <: Cat end
+julia> abstract type WeirdCat <: Cat end
+julia> abstract type WeirdCat <: Cat end
+julia> abstract type WeirdCat <: Cat end
+julia> abstract type WeirdCat <: Cat end
+julia> abstract type WeirdCat <: Cat end
+julia> abstract type WeirdCat <: Cat end
+julia> abstract type WeirdCat <: Cat end
+julia> abstract type WeirdCat <: Cat end
+julia> abstract type WeirdCat <: Cat end
+julia> abstract type eirdCat <: Cat end
+julia> abstract type irdCat <: Cat end
+julia> abstract type rdCat <: Cat end
+julia> abstract type dCat <: Cat end
+julia> abstract type Cat <: Cat end
+julia> abstract type at <: Cat end
+julia> abstract type t <: Cat end
+julia> abstract type  <: Cat end
+julia> abstract type <: Cat end
+julia> abstract type : Cat end
+julia> abstract type  Cat end
+julia> abstract type Cat end
+julia> abstract type Cat end
+
+julia> struct Lion <: Cat
+julia> struct Lion <: Cat
+maneColor
+julia> struct Lion <: Cat
+maneColor
+roar::AbstractString
+julia> struct Lion <: Cat
+maneColor
+roar::AbstractString
+end
+julia> struct Lion <: Cat
+maneColor
+roar::AbstractString
+end
+
+julia> # Creating more constructors (L
+Julia> # Creating more constructors (myl
+julia> # Creating more constructors (my
+julia> # Creating more constructors (multiple dispatch)
+julia> # Creating more constructors (multiple dispatch)
+
+julia> Lion(R
+Julia> Lion(roar::AbstractString) = Lion("green", roar)
+julia> Lion(roar::AbstractString) = Lion("green", roar)
+julia> Lion(roar::AbstractString) = Lion("green", roar )
+julia> Lion(roar::AbstractString) = Lion("green", roar)
+julia> Lion(roar::AbstractString) = Lion("green", roar)
+Lion
+
+julia> Lion("rowr:"julia> Lion("rowr:julia> Lion("rowr")
+julia> Lion("rowr")
+Lion("green", "rowr")
+
+julia> struct Panther <: Cat
+julia> struct Panther <: Cat
+eyeColor
+julia> struct Panther <: Cat
+eyeColor
+P
+Julia> struct Panther <: Cat
+eyeColor
+# Defing julia> struct Panther <: Cat
+eyeColor
+# Defing
+julia> struct Panther <: Cat
+eyeColor
+# Define constructo
+julia> struct Panther <: Cat
+eyeColor
+# Define constructors within struct usint julia> struct Panther <: Cat
+eyeColor
+# Define constructors within struct usint
+julia> struct Panther <: Cat
+eyeColor
+# Define constructors within struct using `new`julia> struct Panther <: Cat
+eyeColor
+# Define constructors within struct using `new`
+Panther() = new("S
+Julia> struct Panther <: Cat
+eyeColor
+# Define constructors within struct using `new`
+Panther() = new("green")
+julia> struct Panther <: Cat
+eyeColor
+# Define constructors within struct using `new`
+Panther() = new("green")
+end
+julia> struct Panther <: Cat
+eyeColor
+# Define constructors within struct using `new`
+Panther() = new("green")
+end
+
+julia> Panther()
+julia> Panther()
+Panther("green")
+
+julia> function julia> function
+julia> functio
+julia> functi
+julia> funct
+julia> func
+julia> fun
+julia> fu
+julia> f
+julia> me
+julia> me
+julia> meo
+julia> meow(c::Lion) = c.roar
+julia> meow(c::Lion) = c.roar
+meow (generic function with 1 method)
+
+julia> meow(c::Panther) = "grr"julia> meow(c::Panther) = "grr"
+meow (generic function with 2 methods)
+
+julia> meow(Pat
+julia> meow(Panther())
+julia> meow(Panther())
+"grr"
+
+julia> say(c:: julia> say(c::Cat) = meow(c)
+julia> say(c::Cat) = meow(c)
+say (generic function with 1 method)
+
+julia> say(Panther())
+julia> say(Panther())
+"grr"
+
+julia> j
+julia>  julia>  julia>
