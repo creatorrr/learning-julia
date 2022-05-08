@@ -11,12 +11,13 @@ actual(x) = 6x - 11
 # Generate some sample data
 # We need matrices so let's use `hcat` which is typically used for horizontal addition of matrices
 # but for 1-col matrices, it doesn't do anything.
-x_train, x_test = hcat(0:5...), hcat(6:10...)
+# x_train, x_test = hcat(0:5...), hcat(6:10...)
+x_train, x_test = hcat(0:500...), hcat(501:1000...)
 y_train, y_test = actual.(x_train), actual.(x_test)
 
 # Create a 1-input 1-output model
 model = Dense(1 => 1)
-optimizer = Descent()           # A simple gradient descent optimizer
+optimizer = ADAM()           # ADAM optimizer; default values: ADAM(η::Real = 0.001, β::Tuple = (0.9, 0.999), ϵ::Real = EPS)
 
 # Need to define a loss function
 loss(x, y) = Flux.Losses.mse(model(x), y)
@@ -34,7 +35,7 @@ metrics()
 data = [(x_train, y_train)]
 
 # Let's now train this baby
-epochs = 200
+epochs = 20000
 println("Training model for $epochs epochs...")
 
 for _ in 1:epochs
