@@ -1,0 +1,224 @@
+             _
+   _       _ _(_)_     |  Documentation: https://docs.julialang.org
+  (_)     | (_) (_)    |
+   _ _   _| |_  __ _   |  Type "?" for help, "]?" for Pkg help.
+  | | | | | | |/ _` |  |
+  | | |_| | | | (_| |  |  Version 1.7.2 (2022-02-06)
+ _/ |\__'_|_|_|\__'_|  |  Official https://julialang.org/ release
+|__/                   |
+
+julia> # julia> # https://docs.julialang.org/en/v1/manual/integers-and-floating-point-numbers/julia> # https://docs.julialang.org/en/v1/manual/integers-and-floating-point-numbers/
+
+julia> # Gonna skip most f
+julia> # Gonna skip most of the simpler julia> # Gonna skip most of the simpler
+julia> # Gonna skip most of the simple stuff
+julia> # Gonna skip most of the simple stuff
+
+julia> typemx
+julia> typemax(UInt128)
+julia> typemax(UInt128)
+0xffffffffffffffffffffffffffffffff
+
+julia> typed
+julia> typef
+julia> typeof(1e10)
+julia> typeof(1e10)
+Float64
+
+julia> typeof(1e10)
+julia> typeof(1e10)
+julia> typeof(1e10)
+julia> typeof(1e10)
+julia> typeof(1e10)
+julia> typeof(1e10)
+julia> typeof(110)
+julia> typeof(1f10)
+julia> typeof(1f10)
+Float32
+
+julia> 0.0 == -0..julia> 0.0 == -0.0
+julia> 0.0 == -0.0
+true
+
+julia> bitstring(0.0)
+julia> bitstring(0.0)
+"0000000000000000000000000000000000000000000000000000000000000000"
+
+julia> bitstring(0.0)
+julia> bitstring(0.0)
+julia> bitstring(0.0)
+julia> bitstring(0.0)
+julia> bitstring(0.0)
+julia> bitstring(0.0)
+julia> bitstring(0.0)
+julia> bitstring(-0.0)
+julia> bitstring(-0.0)
+"1000000000000000000000000000000000000000000000000000000000000000"
+
+julia> # So it does store te julia> # So it does store te
+julia> # So it does store the informatin
+julia> # So it does store the informationt julia> # So it does store the informationt
+julia> # So it does store the information about the en
+julia> # So it does store the information about the e
+julia> # So it does store the information about the negative sign for -0.0 BUT julia> # So it does store the information about the negative sign for -0.0 BUT 0
+julia> # So it does store the information about the negative sign for -0.0 BUT 0.julia> # So it does store the information about the negative sign for -0.0 BUT 0.0
+julia> # So it does store the information about the negative sign for -0.0 BUT 0.0 julia> # So it does store the information about the negative sign for -0.0 BUT 0.0 i
+julia> # So it does store the information about the negative sign for -0.0 BUT 0.0 is
+julia> # So it does store the information about the negative sign for -0.0 BUT 0.0 is julia> # So it does store the information about the negative sign for -0.0 BUT 0.0 is s
+julia> # So it does store the information about the negative sign for -0.0 BUT 0.0 is st
+julia> # So it does store the information about the negative sign for -0.0 BUT 0.0 is sti
+julia> # So it does store the information about the negative sign for -0.0 BUT 0.0 is stil
+julia> # So it does store the information about the negative sign for -0.0 BUT 0.0 is still
+julia> # So it does store the information about the negative sign for -0.0 BUT 0.0 is still julia> # So it does store the information about the negative sign for -0.0 BUT 0.0 is still q
+julia> # So it does store the information about the negative sign for -0.0 BUT 0.0 is still julia> # So it does store the information about the negative sign for -0.0 BUT 0.0 is still e
+julia> # So it does store the information about the negative sign for -0.0 BUT 0.0 is still eq
+julia> # So it does store the information about the negative sign for -0.0 BUT 0.0 is still equ
+julia> # So it does store the information about the negative sign for -0.0 BUT 0.0 is still equa
+julia> # So it does store the information about the negative sign for -0.0 BUT 0.0 is still equal
+julia> # So it does store the information about the negative sign for -0.0 BUT 0.0 is still equal julia> # So it does store the information about the negative sign for -0.0 BUT 0.0 is still equal t
+julia> # So it does store the information about the negative sign for -0.0 BUT 0.0 is still equal to
+julia> # So it does store the information about the negative sign for -0.0 BUT 0.0 is still equal to julia> # So it does store the information about the negative sign for -0.0 BUT 0.0 is still equal to 0
+julia> # So it does store the information about the negative sign for -0.0 BUT 0.0 is still equal to 0.julia> # So it does store the information about the negative sign for -0.0 BUT 0.0 is still equal to 0.0
+julia> # So it does store the information about the negative sign for -0.0 BUT 0.0 is still equal to 0.julia> # So it does store the information about the negative sign for -0.0 BUT 0.0 is still equal to 0
+julia> # So it does store the information about the negative sign for -0.0 BUT 0.0 is still equal to julia> # So it does store the information about the negative sign for -0.0 BUT 0.0 is still equal to -julia> # So it does store the information about the negative sign for -0.0 BUT 0.0 is still equal to -0
+julia> # So it does store the information about the negative sign for -0.0 BUT 0.0 is still equal to -0.julia> # So it does store the information about the negative sign for -0.0 BUT 0.0 is still equal to -0.0
+julia> # So it does store the information about the negative sign for -0.0 BUT 0.0 is still equal to -0.0
+
+julia> NaN != NaN
+Julia> NaN != NaN
+true
+
+julia> # NaN is not equal to ANY floating point value
+julia> # NaN is not equal to ANY floating point value
+
+julia> 1/Inf == 0.0
+julia> 1/Inf == 0.0
+true
+
+julia> 1/0 == Infg
+julia> 1/0 == Inf
+julia> 1/0 == Inf
+true
+
+julia> # Most real numbers cannot be represented exactly by float values
+julia> # Most real numbers cannot be represented exactly by float values
+
+julia> # So it's important to know the minimun
+julia> # So it's important to know the minimum distance between adjacent values
+julia> # So it's important to know the minimum distance between adjacent values
+julia> # So it's important to know the minimum distance between adjacent values i
+julia> # So it's important to know the minimum distance between adjacent values in
+julia> # So it's important to know the minimum distance between adjacent values in julia> # So it's important to know the minimum distance between adjacent values in a
+julia> # So it's important to know the minimum distance between adjacent values in a julia> # So it's important to know the minimum distance between adjacent values in a t
+julia> # So it's important to know the minimum distance between adjacent values in a ty
+julia> # So it's important to know the minimum distance between adjacent values in a typ
+julia> # So it's important to know the minimum distance between adjacent values in a type
+julia> # So it's important to know the minimum distance between adjacent values in a type
+
+julia> # This is called machine epsilon
+julia> # This is called machine epsilon
+
+julia> eps(Float64)
+julia> eps(Float64)
+2.220446049250313e-16
+
+julia> eps(Float64)
+julia> eps(Float64)
+julia> eps(Float64) < E
+Julia> eps(Float64) < eps(Float32)
+julia> eps(Float64) < eps(Float32)
+true
+
+julia> # If a number doesn't have a julia> # If a number doesn't have an exact float representation, it is rounded
+julia> # If a number doesn't have an exact float representation, it is rounded
+
+julia> # Rounding is done accorti
+julia> # Rounding is done accort
+julia> # Rounding is done according to different modes defined by IEEE 754
+julia> # Rounding is done according to different modes defined by IEEE 754
+
+julia> # *julia> # (Which of course it julia> # (Which of course it
+julia> # (Which of course is not available for free online julia> # (Which of course is not available for free online; pfft()
+julia> # (Which of course is not available for free online; pfft(julia> # (Which of course is not available for free online; pfft)
+julia> # (Which of course is not available for free online; pfft)
+
+julia> big:julia> big"12345678901234567890" +1
+julia> big"12345678901234567890" +1
+12345678901234567891
+
+julia> p
+julia> big"12345678901234567890" +1
+julia> big"12345678901234567890" +1
+julia> big"12345678901234567890" +1
+julia> big"12345678901234567890" +1
+julia> big"12345678901234567890" +1
+julia> big"12345678901234567890" +1
+julia> big"12345678901234567890") +1
+julia> big"12345678901234567890") +1
+julia> big"12345678901234567890") +1
+julia> ig"12345678901234567890") +1
+julia> g"12345678901234567890") +1
+julia> "12345678901234567890") +1
+julia> p"12345678901234567890") +1
+julia> pa"12345678901234567890") +1
+julia> par"12345678901234567890") +1
+julia> pars"12345678901234567890") +1
+julia> parse"12345678901234567890") +1
+julia> parse("12345678901234567890") +1
+julia> parse(B"12345678901234567890") +1
+julia> parse(Bi"12345678901234567890") +1
+julia> parse(Big"12345678901234567890") +1
+julia> parse(BigI"12345678901234567890") +1
+julia> parse(BigIn"12345678901234567890") +1
+julia> parse(BigInt"12345678901234567890") +1
+julia> parse(BigInt,"12345678901234567890") +1
+julia> parse(BigInt, "12345678901234567890") +1
+julia> parse(BigInt, "12345678901234567890") +1
+12345678901234567891
+
+julia> # Example of roundei
+julia> # Example of rounde
+julia> # Example of roundig julia> # Example of roundig
+julia> # Example of rounding float problem as above
+julia> # Example of rounding float problem as above
+
+julia> big"1.23456789012345678901"julia> big"1.23456789012345678901"
+1.234567890123456789010000000000000000000000000000000000000000000000000000000004
+
+julia> # GODDAMMIT
+Julia> # GODDAMMIT
+
+julia> # Numerical coeffie
+julia> # Numerical coefficients
+julia> # Numerical coefficients
+
+julia> x = 2
+julia> x = 3
+julia> x = 3
+3
+
+julia> x^2 + 5x -1
+julia> x^2 + 5x -1
+23
+
+julia> (x-1)x
+julia> (x-1)x
+6
+
+julia> # This wont work:julia> # This wont work:
+
+julia> x(x_
+julia> x(x+1)_
+julia> x(x+1)
+julia> x(x+1)
+ERROR: MethodError: objects of type Int64 are not callable
+Maybe you forgot to use an operator such as *, ^, %, / etc. ?
+Stacktrace:
+ [1] top-level scope
+   @ REPL[31]:1
+
+julia>
+
+julia> ZZ
+Julia> Z
+Julia>

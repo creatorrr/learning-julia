@@ -1,0 +1,216 @@
+               _
+   _       _ _(_)_     |  Documentation: https://docs.julialang.org
+  (_)     | (_) (_)    |
+   _ _   _| |_  __ _   |  Type "?" for help, "]?" for Pkg help.
+  | | | | | | |/ _` |  |
+  | | |_| | | | (_| |  |  Version 1.7.2 (2022-02-06)
+ _/ |\__'_|_|_|\__'_|  |  Official https://julialang.org/ release
+|__/                   |
+
+julia> # Julia strings
+julia> # Julia strings
+
+julia> # julia> # https://docs.julialang.org/en/v1/manual/strings/#man-concatenation
+julia> # https://docs.julialang.org/en/v1/manual/strings/#man-concatenation
+
+julia> typef
+julia> typeof(String)
+julia> typeof(String)
+DataType
+
+julia> typeof("hello")
+julia> typeof("hello")
+String
+
+julia> typeof("julia> typeof('hi
+julia> typeof('h')
+julia> typeof('h')
+Char
+
+julia> """multi-line string"""julia> """multi-line string"""
+"multi-line string"
+
+julia> "julia> x = 0; "string interpolation julia> x = 0; "string interpolation: #julia> x = 0; "string interpolation: $#julia> x = 0; "string interpolation: $x"julia> x = 0; "string interpolation: $x"
+"string interpolation: 0"
+
+julia> str = "hello world"julia> str = "hello world"
+"hello world"
+
+julia> str[1]julia> str[1]
+'h': ASCII/Unicode U+0068 (category Ll: Letter, lowercase)
+
+julia> str[begin]julia> str[begin]
+'h': ASCII/Unicode U+0068 (category Ll: Letter, lowercase)
+
+julia> str[end]julia> str[end]
+'d': ASCII/Unicode U+0064 (category Ll: Letter, lowercase)
+
+julia> str[2:4]julia> str[2:4]
+"ell"
+
+julia> typeof(str[4])
+julia> typeof(str[4])
+Char
+
+julia> typef
+julia> typeof(str[4:4])
+julia> typeof(str[4:4])
+String
+
+julia> # Concatenation is different syntactically o
+julia> # Concatenation is different syntactically to other languagtes
+julia> # Concatenation is different syntactically to other languagte
+julia> # Concatenation is different syntactically to other languagt
+julia> # Concatenation is different syntactically to other languages
+julia> # Concatenation is different syntactically to other languages
+
+julia> # Julia uses `*` as the concat operator and has a good rationale for it
+julia> # Julia uses `*` as the concat operator and has a good rationale for it
+
+julia> # > julia> # > While * may seem like a surprising choice to users
+julia> # > While * may seem like a surprising choice to users
+
+julia> # > julia> # > this use of * has precedent in mathematics, particularly in abstract algebra
+julia> # > this use of * has precedent in mathematics, particularly in abstract algebra
+
+julia> # > julia> # > In mathematics, + usually denotes a commutative operation
+julia> # > In mathematics, + usually denotes a commutative operation
+
+julia> # > julia> # > where the order of the operands does not matter
+julia> # > where the order of the operands does not matter
+
+julia> # .julia> # =julia> # julia> #
+
+julia> # > julia> # > In contrast, * typically denotes a noncommutative operation
+julia> # > In contrast, * typically denotes a noncommutative operation
+
+julia> # > like matric
+julia> # > like matrix multiplication, where order of operands does matter
+julia> # > like matrix multiplication, where order of operands does matter
+
+julia> # > julia> # > More precisely, the set of all finite-length strings S together with the
+julia> # > More precisely, the set of all finite-length strings S together with the
+
+julia> # > julia> # > string concatenation operator * forms a free monoid (S, *). julia> # > string concatenation operator * forms a free monoid (S, *).
+
+julia> # Regular expressions are represented with the `r` tag
+julia> # Regular expressions are represented with the `r` tag
+
+julia> re = r"^\s*(?:#|$)"julia> re = r"^\s*(?:#|$)"
+r"^\s*(?:#|$)"
+
+julia> typeof julia> typeof(re)
+julia> typeof(re)
+Regex
+
+julia> occursin(r"^\s*(?:#|$)", "# a comment")
+julia> occursin(r"^\s*(?:#|$)", "# a comment")
+true
+
+julia> match(r"^\s*(?:#|$)", "# a comment")
+julia> match(r"^\s*(?:#|$)", "# a comment")
+RegexMatch("#")
+
+julia> # julia> # If the regular expression does not match the given string, match returns nothing
+julia> # If the regular expression does not match the given string, match returns nothing
+julia> # If the regular expression does not match the given string, match returns nothing
+
+julia> # `noti
+julia> # `nothing` is a special value, not printed in the repl
+julia> # `nothing` is a special value, not printed in the repl
+
+julia> match(r"^\s*(?:#|$)", "not a comment")
+julia> match(r"^\s*(?:#|$)", "not a comment")
+
+julia> match(r"^\s*(?:#|$)", "not a comment")
+julia> match(r"^\s*(?:#|$)", "not a comment")
+julia> match(r"^\s*(?:#|$)", "not a comment")
+julia> match(r"^\s*(?:#|$)", "not a comment")
+julia> mmatch(r"^\s*(?:#|$)", "not a comment")
+julia> m match(r"^\s*(?:#|$)", "not a comment")
+julia> m =match(r"^\s*(?:#|$)", "not a comment")
+julia> m = match(r"^\s*(?:#|$)", "not a comment")
+julia> m = match(r"^\s*(?:#|$)", "not a comment")
+
+julia> m == nothing
+julia> m == nothing
+true
+
+julia> m = match(r"(a|b)(c)?(d)", "acd")
+julia> m = match(r"(a|b)(c)?(d)", "acd")
+RegexMatch("acd", 1="a", 2="c", 3="d")
+
+julia> m.match
+julia> m.match
+"acd"
+
+julia> m.captures
+julia> m.captures
+3-element Vector{Union{Nothing, SubString{String}}}:
+ "a"
+ "c"
+ "d"
+
+julia> m=match(r"(?<hour>\d+):(?<minute>\d+)","12:45")
+julia> m=match(r"(?<hour>\d+):(?<minute>\d+)","12:45")
+RegexMatch("12:45", hour="12", minute="45")
+
+julia> m[:minute]julia> m[:minute]
+"45"
+
+julia> typeof(:minute)
+julia> typeof(:minute)
+Symbol
+
+julia> replace("a", r"." => s"\g<0>1")
+julia> replace("a", r"." => s"\g<0>1")
+"a1"
+
+julia> # `s` tag is for substitution strings
+julia> # `s` tag is for substitution strings
+
+julia> # You can add flags to regexes, `i`, `s`, `m`, `x`julia> # You can add flags to regexes, `i`, `s`, `m`, `x`
+
+julia> r"a+.*b+.*?d$"ism
+julia> r"a+.*b+.*?d$"ism
+r"a+.*b+.*?d$"ims
+
+julia> # Version numbers can be s
+julia> # Version numbers can be res
+julia> # Version numbers can be represented using the `v` tas
+julia> # Version numbers can be represented using the `v` tag
+julia> # Version numbers can be represented using the `v` tag
+
+julia> # They follow semver
+julia> # They follow semver
+
+julia> v"0.2.1"julia> v"0.2.1"
+v"0.2.1"
+
+julia> v"0.2.1"julia> v"0.2.1"julia> v"0.2.1")
+julia> v"0.2.1")
+julia> tv"0.2.1")
+julia> tyv"0.2.1")
+julia> typv"0.2.1")
+julia> typev"0.2.1")
+julia> typeov"0.2.1")
+julia> typeofv"0.2.1")
+julia> typeof(v"0.2.1")
+julia> typeof(v"0.2.1")
+VersionNumber
+
+julia> v"0.2" <= VERSION < v"0.3-"julia> v"0.2" <= VERSION < v"0.3-"
+false
+
+julia> VERSION
+Julia> VERSION
+v"1.7.2"
+
+julia> L
+Julia> # Lastly `raw` tag for raw strings
+julia> # Lastly `raw` tag for raw strings
+
+julia> raw"\\ $x \\"julia> raw"\\ $x \\"
+"\\\\ \$x \\"
+
+julia>

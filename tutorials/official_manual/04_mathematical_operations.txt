@@ -1,0 +1,84 @@
+               _
+   _       _ _(_)_     |  Documentation: https://docs.julialang.org
+  (_)     | (_) (_)    |
+   _ _   _| |_  __ _   |  Type "?" for help, "]?" for Pkg help.
+  | | | | | | |/ _` |  |
+  | | |_| | | | (_| |  |  Version 1.7.2 (2022-02-06)
+ _/ |\__'_|_|_|\__'_|  |  Official https://julialang.org/ release
+|__/                   |
+
+julia> # julia> # Mathematical Operations and Elementary Functions
+julia> # Mathematical Operations and Elementary Functions
+
+julia> # julia> # https://docs.julialang.org/en/v1/manual/mathematical-operations/#Mathematical-Operations-and-Elementary-Functions
+julia> # https://docs.julialang.org/en/v1/manual/mathematical-operations/#Mathematical-Operations-and-Elementary-Functions
+
+julia> # Gonna skip basic stuff
+julia> # Gonna skip basic stuff
+
+julia> # If used in multiplo
+julia> # If used in multiplication, `false` as
+julia> # If used in multiplication, `false` acts as a strong zero
+julia> # If used in multiplication, `false` acts as a strong zero
+
+julia> Inf * false
+julia> Inf * false
+0.0
+
+julia> In
+julia> I
+Julia> NaN * false
+julia> NaN * false
+0.0
+
+julia> # All binary operations a
+julia> # All binary operations have a vectorized correspoinding "dot" operation
+julia> # All binary operations have a vectorized correspoinding "dot" operation
+
+julia> [1,2,3] .^ 3
+julia> [1,2,3] .^ 3
+3-element Vector{Int64}:
+  1
+  8
+ 27
+
+julia> squatre
+julia> squatr
+julia> squatr
+julia> squat
+julia> square root ahh
+julia> square root ah
+julia> square root a
+julia> square root has a cool symbol. :)
+julia> square root has a cool symbol. :)
+julia> #square root has a cool symbol. :)
+julia> # square root has a cool symbol. :)
+julia> # square root has a cool symbol. :)
+
+julia> â2
+julia> â2
+1.4142135623730951
+
+julia> # Use `isequal julia> # Use `isequal` for checking for identical values. This is different to julia> # Use `isequal` for checking for identical values. This is different to t
+julia> # Use `isequal` for checking for identical values. This is different to th
+julia> # Use `isequal` for checking for identical values. This is different to the
+julia> # Use `isequal` for checking for identical values. This is different to the julia> # Use `isequal` for checking for identical values. This is different to the `julia> # Use `isequal` for checking for identical values. This is different to the `=julia> # Use `isequal` for checking for identical values. This is different to the `==julia> # Use `isequal` for checking for identical values. This is different to the `==`julia> # Use `isequal` for checking for identical values. This is different to the `==` julia> # Use `isequal` for checking for identical values. This is different to the `==` o
+julia> # Use `isequal` for checking for identical values. This is different to the `==` op
+julia> # Use `isequal` for checking for identical values. This is different to the `==` op
+
+julia> ise
+julia> isequal(NaN, NaN)
+julia> isequal(NaN, NaN)
+true
+
+julia> isequal(-0.0, 0.0)
+julia> isequal(-0.0, 0.0)
+false
+
+julia> # `sinpi` etc for more accurate `sin(pi*x)`julia> # `sinpi` etc for more accurate `sin(pi*x)`
+
+julia> sinpi(10) !julia> sinpi(10) != sin(pi*10)
+julia> sinpi(10) != sin(pi*10)
+true
+
+julia>
