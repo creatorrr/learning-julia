@@ -1,0 +1,877 @@
+               _
+   _       _ _(_)_     |  Documentation: https://docs.julialang.org
+  (_)     | (_) (_)    |
+   _ _   _| |_  __ _   |  Type "?" for help, "]?" for Pkg help.
+  | | | | | | |/ _` |  |
+  | | |_| | | | (_| |  |  Version 1.7.2 (2022-02-06)
+ _/ |\__'_|_|_|\__'_|  |  Official https://julialang.org/ release
+|__/                   |
+
+julia> $
+julia> # Types
+julia> # Types
+
+julia> # julia> # https://docs.julialang.org/en/v1/manual/types/julia> # https://docs.julialang.org/en/v1/manual/types/
+
+julia> # Julia's type system is julia> # Julia's type system is dynamic, nominative and parametric
+julia> # Julia's type system is dynamic, nominative and parametric
+
+julia> # dynamic = all types are available only at runtime
+julia> # dynamic = all types are available only at runtime
+
+julia> # nominative = compatibiliy
+julia> # nominative = compatibility of typs
+julia> # nominative = compatibility of types is determined by explicit declarat
+julia> # nominative = compatibility of types is determined by explicit declarati
+julia> # nominative = compatibility of types is determined by explicit declaratio
+julia> # nominative = compatibility of types is determined by explicit declaration
+julia> # nominative = compatibility of types is determined by explicit declarations
+julia> # nominative = compatibility of types is determined by explicit declarations
+
+julia> # parametric = julia> # parametric = Generic types can be parameterized
+julia> # parametric = Generic types can be parameterized
+
+julia> # julia> # concrete types may not subtype each other: all concrete types are final
+julia> # concrete types may not subtype each other: all concrete types are final
+
+
+julia> # julia> # all values in Julia are true objects having a type
+julia> # all values in Julia are true objects having a type
+
+julia> # `julia> # `:: operator can be used to attach type annotations to expressions
+julia> # `:: operator can be used to attach type annotations to expressions
+julia> # `:: operator can be used to attach type annotations to expressions
+julia> # `:: operator can be used to attach type annotations to expressions
+julia> # `:: operator can be used to attach type annotations to expressions
+julia> # `:: operator can be used to attach type annotations to expressions
+julia> # `:: operator can be used to attach type annotations to expressions
+julia> # `:: operator can be used to attach type annotations to expressions
+julia> # `:: operator can be used to attach type annotations to expressions
+julia> # `:: operator can be used to attach type annotations to expressions
+julia> # `:: operator can be used to attach type annotations to expressions
+julia> # `:: operator can be used to attach type annotations to expressions
+julia> # `:: operator can be used to attach type annotations to expressions
+julia> # `:: operator can be used to attach type annotations to expressions
+julia> # `:: operator can be used to attach type annotations to expressions
+julia> # `:: operator can be used to attach type annotations to expressions
+julia> # `:: operator can be used to attach type annotations to expressions
+julia> # `::` operator can be used to attach type annotations to expressions
+julia> # `::` operator can be used to attach type annotations to expressions
+
+julia> # values can only have conv
+julia> # values can only have concrete types
+julia> # values can only have concrete types
+
+julia> (1+2)::Int
+julia> (1+2)::Int
+3
+
+julia> (1+2)::AbstractFloat
+julia> (1+2)::AbstractFloat
+ERROR: TypeError: in typeassert, expected AbstractFloat, got a value of type Int64
+Stacktrace:
+ [1] top-level scope
+   @ REPL[11]:1
+
+julia> # When on julia> # When on the left-hand side of an assignment, `::` is different
+julia> # When on the left-hand side of an assignment, `::` is different
+
+julia> # julia> # it declares the variable to always have the specified type
+julia> # it declares the variable to always have the specified type
+
+julia> # > julia> # > Abstract types cannot be instantiated, and serve only as nodes in the type graph
+julia> # > Abstract types cannot be instantiated, and serve only as nodes in the type graph
+
+julia> abstract type Gaga <: Any end
+julia> abstract type Gaga <: Any end
+
+julia> # `<:` operator can alson
+julia> # `<:` operator can also be used as a binary op to check if rvalue is ab
+julia> # `<:` operator can also be used as a binary op to check if rvalue is abo
+julia> # `<:` operator can also be used as a binary op to check if rvalue is abov
+julia> # `<:` operator can also be used as a binary op to check if rvalue is above
+julia> # `<:` operator can also be used as a binary op to check if rvalue is above julia> # `<:` operator can also be used as a binary op to check if rvalue is above l
+julia> # `<:` operator can also be used as a binary op to check if rvalue is above lv
+julia> # `<:` operator can also be used as a binary op to check if rvalue is above lva
+julia> # `<:` operator can also be used as a binary op to check if rvalue is above lval
+julia> # `<:` operator can also be used as a binary op to check if rvalue is above lvalu
+julia> # `<:` operator can also be used as a binary op to check if rvalue is above lvalue
+julia> # `<:` operator can also be used as a binary op to check if rvalue is above lvalue julia> # `<:` operator can also be used as a binary op to check if rvalue is above lvalue i
+julia> # `<:` operator can also be used as a binary op to check if rvalue is above lvalue in
+julia> # `<:` operator can also be used as a binary op to check if rvalue is above lvalue in julia> # `<:` operator can also be used as a binary op to check if rvalue is above lvalue in t
+julia> # `<:` operator can also be used as a binary op to check if rvalue is above lvalue in ty
+julia> # `<:` operator can also be used as a binary op to check if rvalue is above lvalue in tyy
+julia> # `<:` operator can also be used as a binary op to check if rvalue is above lvalue in tyyp
+julia> # `<:` operator can also be used as a binary op to check if rvalue is above lvalue in tyype
+julia> # `<:` operator can also be used as a binary op to check if rvalue is above lvalue in tyype julia> # `<:` operator can also be used as a binary op to check if rvalue is above lvalue in tyype h
+julia> # `<:` operator can also be used as a binary op to check if rvalue is above lvalue in tyype hi
+julia> # `<:` operator can also be used as a binary op to check if rvalue is above lvalue in tyype hie
+julia> # `<:` operator can also be used as a binary op to check if rvalue is above lvalue in tyype hier
+julia> # `<:` operator can also be used as a binary op to check if rvalue is above lvalue in tyype hiera
+julia> # `<:` operator can also be used as a binary op to check if rvalue is above lvalue in tyype hierar
+julia> # `<:` operator can also be used as a binary op to check if rvalue is above lvalue in tyype hierarc
+julia> # `<:` operator can also be used as a binary op to check if rvalue is above lvalue in tyype hierarch
+julia> # `<:` operator can also be used as a binary op to check if rvalue is above lvalue in tyype hierarchy
+julia> # `<:` operator can also be used as a binary op to check if rvalue is above lvalue in tyype hierarchy
+
+julia> abstract type Lady <: Gaga ed
+julia> abstract type Lady <: Gaga end
+julia> abstract type Lady <: Gaga end
+
+julia> Lady <: Any
+julia> Lady <: Any
+true
+
+julia> # Abstract types are useful to provide default implem
+julia> # Abstract types are useful to provide default imple
+julia> # Abstract types are useful to provide default implmentations
+julia> # Abstract types are useful to provide default implmentations
+
+julia> j
+julia> # Primitive types are concrete bit valuies
+julia> # Primitive types are concrete bit valuie
+julia> # Primitive types are concrete bit valui
+julia> # Primitive types are concrete bit values
+julia> # Primitive types are concrete bit values
+
+julia> # > Julia discourages creating new primitive types
+julia> # > Julia discourages creating new primitive types
+
+julia> primitive type FloatNew16 <: AbstractFloat 16 end
+julia> primitive type FloatNew16 <: AbstractFloat 16 end
+
+julia> # Types `Bool`, `Int8` and `UInt8` are all 8-biut
+julia> # Types `Bool`, `Int8` and `UInt8` are all 8-biu
+julia> # Types `Bool`, `Int8` and `UInt8` are all 8-bit primiticve
+julia> # Types `Bool`, `Int8` and `UInt8` are all 8-bit primiticv
+julia> # Types `Bool`, `Int8` and `UInt8` are all 8-bit primiticv
+julia> # Types `Bool`, `Int8` and `UInt8` are all 8-bit primitic
+julia> # Types `Bool`, `Int8` and `UInt8` are all 8-bit primitive types for exa
+julia> # Types `Bool`, `Int8` and `UInt8` are all 8-bit primitive types for exam
+julia> # Types `Bool`, `Int8` and `UInt8` are all 8-bit primitive types for examp
+julia> # Types `Bool`, `Int8` and `UInt8` are all 8-bit primitive types for exampl
+julia> # Types `Bool`, `Int8` and `UInt8` are all 8-bit primitive types for example
+julia> # Types `Bool`, `Int8` and `UInt8` are all 8-bit primitive types for example
+
+julia> # but, since julia is nominative, cannot be interchanged without explici
+julia> # but, since julia is nominative, cannot be interchanged without explicit
+julia> # but, since julia is nominative, cannot be interchanged without explicit julia> # but, since julia is nominative, cannot be interchanged without explicit c
+julia> # but, since julia is nominative, cannot be interchanged without explicit co
+julia> # but, since julia is nominative, cannot be interchanged without explicit con
+julia> # but, since julia is nominative, cannot be interchanged without explicit conv
+julia> # but, since julia is nominative, cannot be interchanged without explicit conve
+julia> # but, since julia is nominative, cannot be interchanged without explicit conver
+julia> # but, since julia is nominative, cannot be interchanged without explicit convers
+julia> # but, since julia is nominative, cannot be interchanged without explicit conversi
+julia> # but, since julia is nominative, cannot be interchanged without explicit conversio
+julia> # but, since julia is nominative, cannot be interchanged without explicit conversion
+julia> # but, since julia is nominative, cannot be interchanged without explicit conversion
+
+julia> # Composite types (structs etc) are collections of named fields
+julia> # Composite types (structs etc) are collections of named fields
+
+julia> struct Foo
+julia> struct Foo
+julia> struct Foo
+    bar
+julia> struct Foo
+    bar
+    baz::Int
+julia> struct Foo
+    bar
+    baz::Int
+    qux::Float64
+julia> struct Foo
+    bar
+    baz::Int
+    qux::Float64
+    julia> struct Foo
+    bar
+    baz::Int
+    qux::Float64
+end
+julia> struct Foo
+    bar
+    baz::Int
+    qux::Float64
+end
+
+julia> j
+julia> Foo("string", 1, 1.0) == Foo(:julia> Foo("string", 1, 1.0) == Foo("string", 1, 1.2
+julia> Foo("string", 1, 1.0) == Foo("string", 1, 1.0)
+julia> Foo("string", 1, 1.0) == Foo("string", 1, 1.0)
+true
+
+julia> # `===` checks for exact pointer equality (other
+julia> # `===` checks for exact pointer equality (othe
+julia> # `===` checks for exact pointer equality (oth
+julia> # `===` checks for exact pointer equality (ot
+julia> # `===` checks for exact pointer equality (o
+julia> # `===` checks for exact pointer equality (julia> # `===` checks for exact pointer equality julia> # `===` checks for exact pointer equality
+
+julia> # Sice
+julia> # Sic
+julia> # Since structs are immutable by defa
+julia> # Since structs are immutable by def
+julia> # Since structs are immutable by de
+julia> # Since structs are immutable by d
+julia> # Since structs are immutable by julia> # Since structs are immutable by
+julia> # Since structs are immutable b
+julia> # Since structs are immutable julia> # Since structs are immutable julia> # Since structs are immutable julia> # Since structs are immutable, identical immutable structs are also te
+julia> # Since structs are immutable, identical immutable structs are also the julia> # Since structs are immutable, identical immutable structs are also the s
+julia> # Since structs are immutable, identical immutable structs are also the sa
+julia> # Since structs are immutable, identical immutable structs are also the sam
+julia> # Since structs are immutable, identical immutable structs are also the same
+julia> # Since structs are immutable, identical immutable structs are also the same julia> # Since structs are immutable, identical immutable structs are also the same i
+julia> # Since structs are immutable, identical immutable structs are also the same in
+julia> # Since structs are immutable, identical immutable structs are also the same ins
+julia> # Since structs are immutable, identical immutable structs are also the same inst
+julia> # Since structs are immutable, identical immutable structs are also the same insta
+julia> # Since structs are immutable, identical immutable structs are also the same instan
+julia> # Since structs are immutable, identical immutable structs are also the same instanc
+julia> # Since structs are immutable, identical immutable structs are also the same instance
+julia> # Since structs are immutable, identical immutable structs are also the same instances
+julia> # Since structs are immutable, identical immutable structs are also the same instances
+
+julia> # Since structs are immutable, identical immutable structs are also the same instances
+julia> # Since structs are immutable, identical immutable structs are also the same instances
+julia> # `===` checks for exact pointer equality
+julia> # `===` checks for exact pointer equality
+julia> Foo("string", 1, 1.0) == Foo("string", 1, 1.0)
+julia> Foo("string", 1, 1.0) == Foo("string", 1, 1.0)
+julia> Foo("string", 1, 1.0) == Foo("string", 1, 1.0)
+julia> Foo("string", 1, 1.0) == Foo("string", 1, 1.0)
+julia> Foo("string", 1, 1.0) == Foo("string", 1, 1.0)
+julia> Foo("string", 1, 1.0) == Foo("string", 1, 1.0)
+julia> Foo("string", 1, 1.0) == Foo("string", 1, 1.0)
+julia> Foo("string", 1, 1.0) == Foo("string", 1, 1.0)
+julia> Foo("string", 1, 1.0) == Foo("string", 1, 1.0)
+julia> Foo("string", 1, 1.0) === Foo("string", 1, 1.0)
+julia> Foo("string", 1, 1.0) === Foo("string", 1, 1.0)
+true
+
+julia> # ^^ Pretty cool
+julia> # ^^ Pretty cool
+
+julia> # Mutable composite types
+julia> # Mutable composite types
+
+julia> mutable struct Bar
+julia> mutable struct Bar
+julia> mutable struct Bar
+    bax
+julia> mutable struct Bar
+    baz
+julia> mutable struct Bar
+    baz
+    quz::julia> mutable struct Bar
+    baz
+    quz:julia> mutable struct Bar
+    baz
+    quz
+julia> mutable struct Bar
+    baz
+    qux::Float64
+julia> mutable struct Bar
+    baz
+    qux::Float64
+    julia> mutable struct Bar
+    baz
+    qux::Float64
+end
+julia> mutable struct Bar
+    baz
+    qux::Float64
+end
+
+julia> bar = Bar("hello", 1.5)
+julia> bar = Bar("hello", 1.5)
+Bar("hello", 1.5)
+
+julia> bar.qux = 1.julia> bar.qux = 1
+julia> bar.qux = 2.0
+julia> bar.qux = 2.0
+2.0
+
+julia> bas
+julia> bar.bax
+julia> bar.baz = 1//2
+julia> bar.baz = 1//2
+1//2
+
+julia> # Uniont julia> # Uniont
+julia> # Union tpy
+julia> # Union tp
+julia> # Union types
+julia> # Union types
+
+julia> IntOrString = Union{Int, AbstractString}julia> IntOrString = Union{Int, AbstractString}
+Union{Int64, AbstractString}
+
+julia> 1 :: IntO
+Julia> 1 :: IntOrString
+julia> 1 :: IntOrString
+1
+
+julia> j
+julia> s
+julia> # Parametric types (generic programming)
+julia> # Parametric types (generic programming)
+
+julia> struct Point{T}julia> struct Point{T}
+julia> struct Point{T}
+    x::T
+Julia> struct Point{T}
+    x::T
+    y::T
+Julia> struct Point{T}
+    x::T
+    y::T
+    julia> struct Point{T}
+    x::T
+    y::T
+end
+julia> struct Point{T}
+    x::T
+    y::T
+end
+
+julia> # Another useful example:julia> # Another useful example:
+
+julia> Maybe{T} = Uno
+julia> Maybe{T} = Union{T, Nothing}julia> Maybe{T} = Union{T, Nothing}
+Union{Nothing, T} where T
+
+julia> Maybe{Int} <>julia> Maybe{Int} <: Maybe{T}julia> Maybe{Int} <: Maybe{T
+Julia> Maybe{Int} <: Maybe{julia> Maybe{Int} <: Maybe
+julia> Maybe{Int} <: Maybe
+true
+
+julia> # BUT...julia> # BUT...
+
+julia> Maybe{Inr
+julia> Maybe{Int} <: Maybe{Real}julia> Maybe{Int} <: Maybe{Real}
+true
+
+julia> Point{Int julia> Point{Int} <: Point{Real}julia> Point{Int} <: Point{Real}
+false
+
+julia> # ^^ This is gonna be confusing
+julia> # ^^ This is gonna be confusing
+
+julia> Since Point{Float64} is not a subtype of Point{Real},julia> Since Point{Float64} is not a subtype of Point{Real},julia> #Since Point{Float64} is not a subtype of Point{Real},julia> # Since Point{Float64} is not a subtype of Point{Real},julia> # Since Point{Float64} is not a subtype of Point{Real},
+
+julia> # julia> # correct way to define a method that accepts Point{T}:julia> # correct way to define a method that accepts Point{T}:
+
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+    julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+norm (generic function with 1 method)
+
+julia> # Or...julia> # Or...
+
+julia> # Or...julia> # Or...julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{T<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{T}<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{T})<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{T}) <:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{T}) w<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{T}) wh<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{T}) whe<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{T}) wher<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{T}) where<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{T}) where <:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{T}) where T<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{T}) where T<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{T}) where T<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{T}) where T<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{T}) where T<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{T}) where T<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{T}) where T<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{T}) where T<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{T}) where T<:Real})  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{T}) where T<:Real}  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{T}) where T<:Real  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+julia> function norm(p::Point{T}) where T<:Real  # Instead of Point{Real}
+    sqrt(p.x^2 + p.y^2)
+end
+norm (generic function with 1 method)
+
+julia> Point{Float64}(1.0, 2.)
+julia> Point{Float64}(1.0, 2.)
+Point{Float64}(1.0, 2.0)
+
+julia> # Abstract paramteric types work slightly differently
+julia> # Abstract paramteric types work slightly differently
+
+julia> an
+julia> abstract Pointy{T} julia> abstract Pointy{T}julia> abstract Pointy{T} end
+julia> abstract Pointy{T} end
+julia> abstract Pointy{T} end
+julia> abstract Pointy{T} end
+julia> abstract tPointy{T} end
+julia> abstract tyPointy{T} end
+julia> abstract ty[Pointy{T} end
+julia> abstract ty[ePointy{T} end
+julia> abstract ty[e Pointy{T} end
+julia> abstract ty[ePointy{T} end
+julia> abstract ty[Pointy{T} end
+julia> abstract tyPointy{T} end
+julia> abstract typPointy{T} end
+julia> abstract typePointy{T} end
+julia> abstract type Pointy{T} end
+julia> abstract type Pointy{T} end
+
+julia> Pointy{Int64} <: Pointy
+julia> Pointy{Int64} <: Pointy
+true
+
+julia> Pointy{1} <: Pointy
+julia> Pointy{1} <: Pointy
+true
+
+julia> Point{1}julia> Point{1}
+Point{1}
+
+julia> # (<:T) is covariant and (>:T) is contravariany
+julia> # (<:T) is covariant and (>:T) is contravariant
+julia> # (<:T) is covariant and (>:T) is contravariant
+
+julia> Pointy(Float64)
+julia> Pointy(Float64}julia> Pointy(Float64}julia> PointyFloat64}julia> Pointy{Float64}julia> Pointy{Float64} <: Pointy{Real}julia> Pointy{Float64} <: Pointy{Real}
+false
+
+julia> Pointy{Float64} <: Pointy{Real}julia> Pointy{Float64} <: Pointy{Real}julia> Pointy{Float64} <: Pointy{Real}julia> Pointy{Float64} <: Pointy{Real}julia> Pointy{Float64} <: Pointy{Real}julia> Pointy{Float64} <: Pointy{Real}julia> Pointy{Float64} <: Pointy{Real}julia> Pointy{Float64} <: Pointy{Real}julia> Pointy{Float64} <: Pointy{<Real}julia> Pointy{Float64} <: Pointy{<:Real}julia> Pointy{Float64} <: Pointy{<:Real}
+true
+
+julia> Pointy(julia> Pointy{Real} <: Pointy{>:Int}julia> Pointy{Real} <: Pointy{>:Int}
+true
+
+julia> struct Point{T} <: Pointy{T}julia> struct Point{T} <: Pointy{T}
+julia> struct Point{T} <: Pointy{T}
+    x::T
+Julia> struct Point{T} <: Pointy{T}
+    x::T
+    y::T
+Julia> struct Point{T} <: Pointy{T}
+    x::T
+    y::T
+    julia> struct Point{T} <: Pointy{T}
+    x::T
+    y::T
+        julia> struct Point{T} <: Pointy{T}
+    x::T
+    y::T
+    julia> struct Point{T} <: Pointy{T}
+    x::T
+    y::T
+end
+julia> struct Point{T} <: Pointy{T}
+    x::T
+    y::T
+end
+ERROR: invalid redefinition of constant Point
+Stacktrace:
+ [1] top-level scope
+   @ REPL[64]:1
+
+julia> # Vararg tuple types. Tuple types may jha
+julia> # Vararg tuple types. Tuple types may jh
+julia> # Vararg tuple types. Tuple types may j
+julia> # Vararg tuple types. Tuple types may have a special a
+julia> # Vararg tuple types. Tuple types may have a special `Vararg` second par
+julia> # Vararg tuple types. Tuple types may have a special `Vararg` second para
+julia> # Vararg tuple types. Tuple types may have a special `Vararg` second param
+julia> # Vararg tuple types. Tuple types may have a special `Vararg` second param
+
+julia> MyTyop
+julia> MyTyo
+julia> MyTy
+julia> MyTuple = Tuple{String
+julia> MyTuple = Tuple{Strin
+julia> MyTuple = Tuple{Stri
+julia> MyTuple = Tuple{Str
+julia> MyTuple = Tuple{St
+julia> MyTuple = Tuple{S
+Julia> MyTuple = Tuple{AbstractString, Vararg{Int}}julia> MyTuple = Tuple{AbstractString, Vararg{Int}}
+Tuple{AbstractString, Vararg{Int64}}
+
+julia> isa(("1",,julia> isa(("1",), MyTuple)
+julia> isa(("1",), MyTuple)
+true
+
+julia> isa(("1",), MyTuple)
+julia> isa(("1",), MyTuple)
+julia> isa(("1",), MyTuple)
+julia> isa(("1",), MyTuple)
+julia> isa(("1",), MyTuple)
+julia> isa(("1",), MyTuple)
+julia> isa(("1",), MyTuple)
+julia> isa(("1",), MyTuple)
+julia> isa(("1",), MyTuple)
+julia> isa(("1",), MyTuple)
+julia> isa(("1",), MyTuple)
+julia> isa(("1",), MyTuple)
+julia> isa(("1",), MyTuple)
+julia> isa(("1",), MyTuple)
+julia> isa(("1",2), MyTuple)
+julia> isa(("1",2,), MyTuple)
+julia> isa(("1",2,3), MyTuple)
+julia> isa(("1",2,3,), MyTuple)
+julia> isa(("1",2,3,4), MyTuple)
+julia> isa(("1",2,3,4), MyTuple)
+true
+
+julia> # NTuple is exactly N elements
+julia> # NTuple is exactly N elements
+
+julia> 3Tuple = Tuple
+julia> 3Tuple = Tuple
+julia> 3Tuple = NTuple
+julia> 3Tuple = NTuple{3, Int}julia> 3Tuple = NTuple{3, Int}
+ERROR: syntax: "3" is not a valid function argument name around REPL[70]:1
+Stacktrace:
+ [1] top-level scope
+   @ REPL[70]:1
+
+julia> ThreeTupme
+julia> ThreeTupm
+julia> ThreeTuple = NTuple{3, Int}julia> ThreeTuple = NTuple{3, Int}
+Tuple{Int64, Int64, Int64}
+
+julia> # Named tuples
+julia> # Named tuples
+
+julia> T = NamedTu
+julia> T = NamedTuple{(:a, :b), Tuple{Int64, String}}julia> T = NamedTuple{(:a, :b), Tuple{Int64, String}}
+NamedTuple{(:a, :b), Tuple{Int64, String}}
+
+julia> T(a=1, b="hello
+julia> T(a=1, b="hello
+julia> T(a=1, b="hello")
+julia> T(a=1, b="hello")
+ERROR: MethodError: no method matching NamedTuple{(:a, :b), Tuple{Int64, String}}(; a=1, b="hello")
+Closest candidates are:
+  NamedTuple{names, T}(!Matched::T) where {names, T<:Tuple} at ~/.asdf/installs/julia/1.7.2/share/julia/base/boot.jl:605 got unsupported keyword arguments "a", "b"
+  NamedTuple{names, T}(!Matched::Tuple) where {names, T<:Tuple} at ~/.asdf/installs/julia/1.7.2/share/julia/base/namedtuple.jl:90 got unsupported keyword arguments "a", "b"
+  NamedTuple{names, T}(!Matched::Any) where {names, T<:Tuple} at ~/.asdf/installs/julia/1.7.2/share/julia/base/namedtuple.jl:110 got unsupported keyword arguments "a", "b"
+Stacktrace:
+ [1] top-level scope
+   @ REPL[74]:1
+
+julia> T(a=1, b="hello")
+julia> T(a=1, b="hello")
+julia> T(a=1, b="hello"))
+julia> T(a=1, b="hello"))
+julia> T(a=1, b="hello"))
+julia> T(a=1, b="hello"))
+julia> T(a=1, b="hello"))
+julia> T(a=1, b="hello"))
+julia> T((a=1, b="hello"))
+julia> T((a=1, b="hello"))
+(a = 1, b = "hello")
+
+julia> # Needs double parentheses
+julia> # Needs double parentheses
+
+julia> $ julia> $
+julia> # Easy way to declare a named tuple
+julia> # Easy way to declare a named tuple
+
+julia> @NamedTuple{a::Float32,b::String}julia> @NamedTuple{a::Float32,b::String}
+NamedTuple{(:a, :b), Tuple{Float32, String}}
+
+julia> # Value tye
+julia> # Value types ( julia> # Value types (v cool)
+julia> # Value types (v cool)
+
+julia> # you cant dispatch on values differently, like `true` or `false`. only
+julia> # you cant dispatch on values differently, like `true` or `false`. onl
+julia> # you cant dispatch on values differently, like `true` or `false`. on
+julia> # you cant dispatch on values differently, like `true` or `false`. o
+julia> # you cant dispatch on values differently, like `true` or `false`. OP
+Julia> # you cant dispatch on values differently, like `true` or `false`. Only julia> # you cant dispatch on values differently, like `true` or `false`. Only o
+julia> # you cant dispatch on values differently, like `true` or `false`. Only on
+julia> # you cant dispatch on values differently, like `true` or `false`. Only on julia> # you cant dispatch on values differently, like `true` or `false`. Only on t
+julia> # you cant dispatch on values differently, like `true` or `false`. Only on ty
+julia> # you cant dispatch on values differently, like `true` or `false`. Only on typ
+julia> # you cant dispatch on values differently, like `true` or `false`. Only on type
+julia> # you cant dispatch on values differently, like `true` or `false`. Only on types
+julia> # you cant dispatch on values differently, like `true` or `false`. Only on types
+
+julia> # `Val` is an interesting way around that. Implementation:julia> # `Val` is an interesting way around that. Implementation:
+
+julia> MyVal
+julia> MyVa
+julia> MyV
+Julia> My
+julia> M
+Julia> s
+julia> struct MyVal{x} end
+julia> struct MyVal{x} end
+
+julia> MyVal(x) = MyVal{x}()
+julia> MyVal(x) = MyVal{x}()
+MyVal
+
+julia> truthy(::Val{true}) = tur
+julia> truthy(::Val{true}) = tu
+julia> truthy(::Val{true}) = t
+julia> truthy(::Val{true}) = "yes"julia> truthy(::Val{true}) = "yes"
+truthy (generic function with 1 method)
+
+julia> truthy(::Val{true}) = "yes"julia> truthy(::Val{true}) = "yes"julia> truthy(::Val{true}) = "yes"julia> truthy(::Val{true}) = "yes"julia> truthy(::Val{true}) = "yes"julia> truthy(::Val{true}) = "yes"julia> truthy(::Val{true}) = "yes"julia> truthy(::Val{true}) = "yes"julia> truthy(::Val{true}) = "yes"julia> truthy(::Val{true}) = "yes"julia> truthy(::Val{true}) = "yes"julia> truthy(::Val{true}) = "yes"julia> truthy(::Val{true}) = "yes"julia> truthy(::Val{true}) = "yes"julia> truthy(::Val{tre}) = "yes"julia> truthy(::Val{te}) = "yes"julia> truthy(::Val{e}) = "yes"julia> truthy(::Val{ge}) = "yes"julia> truthy(::Val{e}) = "yes"julia> truthy(::Val{fe}) = "yes"julia> truthy(::Val{fae}) = "yes"julia> truthy(::Val{fale}) = "yes"julia> truthy(::Val{false}) = "yes"julia> truthy(::Val{false}) = "yes"julia> truthy(::Val{false}) = "yes"julia> truthy(::Val{false}) = "yes"julia> truthy(::Val{false}) = "yes"julia> truthy(::Val{false}) = "yes"julia> truthy(::Val{false}) = "yes"julia> truthy(::Val{false}) = "yes"julia> truthy(::Val{false}) = "yes"julia> truthy(::Val{false}) = "yes"julia> truthy(::Val{false}) = "yes"julia> truthy(::Val{false}) = "yes"julia> truthy(::Val{false}) = "yes"julia> truthy(::Val{false}) = "ye"julia> truthy(::Val{false}) = "y"julia> truthy(::Val{false}) = ""julia> truthy(::Val{false}) = "n"julia> truthy(::Val{false}) = "no"julia> truthy(::Val{false}) = "no"
+truthy (generic function with 2 methods)
+
+julia> truthy(Val(true))
+julia> truthy(Val(true))
+"yes"
+
+julia> # Although, typically, julia doesnt recommend using them
+julia> # Although, typically, julia doesnt recommend using them
+
+julia>
